@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(coding-rule)",
+      "mcp__claude_ai_Figma__get_design_context",
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(curl -s -o /tmp/skill_matrix.png \"https://www.figma.com/api/mcp/asset/937b6772-24f4-47dd-96a4-cbc1d4332dcb\")"
+    ]
+  }
+}

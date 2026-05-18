@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
 .sustainability {
   .content .sec > .inner {
     max-width: 1000px;
@@ -14,12 +22,16 @@
     line-height: normal;
     font-weight: 700;
     color: #0c6ea3;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    small {
+      font-size: 16px;
+      font-weight: 700;
+    }
   }
   .c-text {
     font-size: 17px;
     line-height: 1.96;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   /* Business Strategy Card */
@@ -233,6 +245,341 @@
     background: #00c0f2;
   }
 
+  /* Risk Management Chart */
+  .graph-frame {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 40px;
+  }
+
+  .graph-frame .img--center img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .risk-chart {
+    position: relative;
+    min-width: 700px;
+    height: 323px;
+    background: #e0e9f6;
+    border-radius: 4px;
+  }
+
+  .risk-chart__box {
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #005ec0;
+    line-height: 1.375;
+  }
+
+  .risk-chart__box--directors {
+    top: 27px;
+    left: 2.7%;
+    width: 20%;
+    height: 60px;
+  }
+
+  .risk-chart__box--management {
+    top: 26px;
+    left: 31.1%;
+    width: 20%;
+    height: 60px;
+  }
+
+  .risk-chart__box--internal-ctrl {
+    top: 26px;
+    left: 59.5%;
+    right: 3.3%;
+    height: 60px;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .risk-chart__box-title {
+    display: block;
+    font-weight: 700;
+  }
+
+  .risk-chart__box-sub {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .risk-chart__box--hd-risk {
+    top: 131px;
+    left: 59.5%;
+    right: 3.3%;
+    height: 60px;
+  }
+
+  .risk-chart__box--biz-risk {
+    top: 236px;
+    left: 59.5%;
+    right: 3.3%;
+    height: 60px;
+  }
+
+  /* Connector arrows (取締役会 ↔ 経営会議) */
+  .risk-chart__connector {
+    position: absolute;
+    top: 26px;
+    left: 22.7%;
+    width: 8.4%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .risk-chart__arrow {
+    position: relative;
+    height: 22px;
+    display: flex;
+    align-items: center;
+  }
+
+  .risk-chart__arrow-label {
+    position: relative;
+    z-index: 1;
+    background: #e0e9f6;
+    padding: 2px 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #005ec0;
+    white-space: nowrap;
+  }
+
+  .risk-chart__arrow--report::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background: #005ec0;
+  }
+
+  .risk-chart__arrow--report::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 8px solid #005ec0;
+  }
+
+  .risk-chart__arrow--report .risk-chart__arrow-label {
+    margin-left: auto;
+  }
+
+  .risk-chart__arrow--supervise::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background: #005ec0;
+  }
+
+  .risk-chart__arrow--supervise::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #005ec0;
+  }
+
+  .risk-chart__arrow--supervise .risk-chart__arrow-label {
+    margin-right: auto;
+  }
+
+  /* Skill Matrix */
+  .sm-table {
+    border-collapse: separate;
+    border-spacing: 4px;
+    table-layout: fixed;
+    min-width: 1000px;
+    margin-bottom: 10px;
+  }
+
+  .sm-table th {
+    background: #0099d8;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  .sm-table td {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  .sm-table td.sm-table__has {
+    background: #e0e9f6;
+  }
+
+  .sm-table__dot {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #005ec0;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .sm-table th:nth-child(1),
+  .sm-table td:nth-child(1) {
+    width: 96px;
+  }
+  .sm-table th:nth-child(2),
+  .sm-table td:nth-child(2) {
+    width: 172px;
+  }
+  .sm-table th:nth-child(3),
+  .sm-table td:nth-child(3) {
+    width: 80px;
+  }
+  .sm-table th:nth-child(4),
+  .sm-table td:nth-child(4) {
+    width: 80px;
+  }
+  .sm-table th:nth-child(5),
+  .sm-table td:nth-child(5) {
+    width: 80px;
+  }
+  .sm-table th:nth-child(6),
+  .sm-table td:nth-child(6) {
+    width: 112px;
+  }
+  .sm-table th:nth-child(7),
+  .sm-table td:nth-child(7) {
+    width: 96px;
+  }
+  .sm-table th:nth-child(8),
+  .sm-table td:nth-child(8) {
+    width: 88px;
+  }
+  .sm-table th:nth-child(9),
+  .sm-table td:nth-child(9) {
+    width: 80px;
+  }
+  .sm-table th:nth-child(10),
+  .sm-table td:nth-child(10) {
+    width: 80px;
+  }
+
+  /* Corporate Governance Quick Reference Table */
+  .cg-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cg-table__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cg-table__row {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .cg-table__term {
+    flex-shrink: 0;
+    width: 280px;
+    background: #0c6ea3;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .cg-table__desc {
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .cg-table__desc-list {
+    list-style: disc;
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cg-table--skills .cg-table__term {
+    width: 168px;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cg-table--skills .cg-table__desc {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .cg-table__note {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    text-align: right;
+    margin: 0;
+  }
+
   /* Portfolio diagram */
   .bs-portfolio__diagram {
     margin-top: 32px;
@@ -242,6 +589,272 @@
   .bs-portfolio__diagram img {
     width: 100%;
     display: block;
+  }
+
+  /* Board Effectiveness Evaluation Cards */
+  .bg-frame--white {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    margin-bottom: 40px;
+  }
+
+  .bg-frame--white + .bg-frame--white {
+    margin-top: -24px;
+  }
+
+  .eval-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .eval-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .eval-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .eval-item__head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .eval-item__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #0099d8;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    flex-shrink: 0;
+  }
+
+  .eval-item__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .eval-item__desc {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .eval-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  /* Remuneration Table */
+  .rem-table {
+    border-collapse: separate;
+    border-spacing: 6px;
+    table-layout: fixed;
+    min-width: 1014px;
+    margin-bottom: 10px;
+  }
+
+  .rem-table th {
+    background: #0099d8;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .rem-table td {
+    background: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    height: 48px;
+  }
+
+  .rem-table__col--name {
+    width: 302px;
+  }
+
+  .rem-table__col--amount {
+    width: 169px;
+  }
+
+  /* Talent Management Section */
+  .tm-section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-width: 1000px;
+  }
+
+  .tm-top {
+    display: flex;
+    gap: 64px;
+    align-items: flex-start;
+  }
+
+  .tm-top__text {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tm-top__heading {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .tm-top__heading-label {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(to right, #47e1fe, #0160c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tm-top__heading::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, #47e1fe, #0160c1);
+  }
+
+  .tm-top__body {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.96;
+    color: #000;
+  }
+
+  .tm-top__diagram {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* HR Cycle */
+  .tm-cycle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* KPI Table (指標・目標・実績) */
+  .kpi-table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+    min-width: 1016px;
+    margin-bottom: 10px;
+  }
+
+  .kpi-table__col {
+    width: 328px;
+  }
+
+  .kpi-table th {
+    background: #4a5eaa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  .kpi-table td {
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* Shareholder Dialogue Card */
+  .talk-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .talk-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c6ea3;
+    line-height: 1;
+  }
+
+  .talk-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .talk-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .talk-item__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1;
+  }
+
+  .talk-item__text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
   }
 }
 
@@ -294,6 +907,19 @@
 
     .bs-portfolio__diagram {
       padding-inline: 0;
+    }
+
+    .cg-table__row {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .cg-table__term {
+      width: 100%;
+    }
+
+    .bg-frame--white {
+      padding: 20px 16px;
     }
   }
 }
