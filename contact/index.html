@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="canonical" href="https://www.tobishimahd.co.jp/contact/">
+
+	<script type="text/javascript">
+		if (screen.width >= 768) document.write('<meta name="viewport" content="width=1280"><meta name="format-detection" content="telephone=no">');
+		else if (screen.width <= 374) document.write('<meta name="viewport" content="width=375"><meta name="format-detection" content="telephone=no">');
+		else document.write('<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.5">');
+
+	</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="/addcommon/css/slick.css" />
+	<link rel="stylesheet" href="/addcommon/css/slick-theme.css" />
+	<link rel="stylesheet" href="/addcommon/css/remodal.css" />
+	<link rel="stylesheet" href="/addcommon/css/remodal-default-theme.css" />
+	<link rel="stylesheet" href="/addcommon/css/common.css?v=9" />
+	<link rel="stylesheet" href="/addcommon/css/contact.css?v=3" />
+
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:type" content="website">
+<meta property="og:site_name" content="飛島ホールディングス" />
+	<meta property="og:description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+	<meta property="og:title" content="お問い合わせフォーム｜飛島ホールディングス">
+	<meta property="og:url" content="https://www.tobishimahd.co.jp/contact/">
+	<meta property="og:image" content="https://www.tobishimahd.co.jp/images/ogp.jpg">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+
+	<meta name="description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+	<title>お問い合わせフォーム｜飛島ホールディングス</title>
+</head>
+
+<body id="inner" class="contact">
+	<section id="top" class="outline">
+	<header class="inc_header"><!-- /include/inc_header --></header>
+		<div class="main">
+			<div class="wrap">
+				<div class="breadlist">
+					<div class="inner">
+						<a href="/">TOP</a> &gt; <span>お問い合わせ</span>
+					</div>
+				</div>
+				<div class="visual">
+					<div class="inner">
+						<p class="label textstyle reverse scrollactive"><span>Contact</span></p>
+						<h1 class="scrollactive" data-delay="600">お問い合わせ</h1>
+					</div>
+				</div>
+				<div class="content">
+					<div class="formbox">
+						<div class="inner error">
+							<p class="lead">お問い合わせ、ご要望については「お問い合わせに関する留意点」についてご確認の上、以下のフォームにご記入ください。</p>
+							<p class="errortext leaderror error_msg"></p>
+							<form action="/contact/confirm/" name="main_form" method="post" id="form_inquiry">
+								<dl class="formlist">
+									<dt class="required"><span>カテゴリー</span></dt>
+									<dd>
+										<p class="errortext category_msg"></p>
+										<label class="selectbox a_arrow" for="contact-category" title="カテゴリー">
+											<select class="category_err" id="contact-category" name="category">
+												<option value="">選択してください</option>
+												<option value="ホールディングスに関して">ホールディングスに関して</option>
+												<option value="飛島建設に関して">飛島建設に関して</option>
+												<option value="その他のグループ企業に関して">その他のグループ企業に関して</option>
+											</select>
+										</label>
+									</dd>
+									<dt class="required"><span>件名</span></dt>
+									<dd>
+										<p class="errortext subject_msg"></p>
+										<label class="input" for="form-subject" title="件名">
+											<input class="subject_err" id="form-subject" name="subject" type="text">
+										</label>
+									</dd>
+									<dt><span>会社・団体名等</span></dt>
+									<dd>
+										<label class="input" for="form-company" title="会社・団体名等">
+											<input id="form-company" name="company" type="text">
+										</label>
+									</dd>
+									<dt><span>部署名等</span></dt>
+									<dd>
+										<label class="input" for="form-department" title="部署名等">
+											<input id="form-department" name="department" type="text">
+										</label>
+									</dd>
+									<dt class="required"><span>氏名</span></dt>
+									<dd>
+										<p class="errortext name_msg"></p>
+										<label class="input" for="form-name" title="氏名">
+											<input class="name_err" id="form-name" name="name" type="text">
+										</label>
+									</dd>
+									<dt><span>電話番号</span></dt>
+									<dd>
+										<label class="input" for="form-tel" title="電話番号">
+											<input id="form-tel" name="tel" type="text">
+										</label>
+									</dd>
+									<dt class="required"><span>メールアドレス</span></dt>
+									<dd>
+										<p class="errortext email_msg"></p>
+										<label class="input" for="form-email" title="メールアドレス">
+											<input class="email_err" id="form-email" name="email" type="text">
+										</label>
+									</dd>
+									<dt class="required"><span>メールアドレス確認用</span></dt>
+									<dd>
+										<p class="errortext email_confirm_msg is_same_email_msg"></p>
+										<label class="input" for="form-email-confirm" title="メールアドレス確認用">
+											<input class="email_confirm_err" id="form-email-confirm"
+												name="email_confirm" type="text">
+											<input type="hidden" name="is_same_email"  />
+										</label>
+									</dd>
+									<dt class="required"><span>お問合せ内容</span></dt>
+									<dd>
+										<p class="errortext question_msg"></p>
+										<label class="textarea" for="form-content" title="メールアドレス確認用">
+											<textarea class="question_err" id="form-content" name="question"></textarea>
+										</label>
+									</dd>
+								</dl>
+								<p class="note">
+									【お問い合わせに関する留意点】<br>
+									・当社への商品やサービスの提供などのご提案に関しては原則回答を控えさせて頂いております。<br>
+									・お問い合わせ内容により回答に時間を要する場合や回答しかねる場合があります。（休業日にいただいたお問い合わせは、翌営業日以降のご回答となります。）<br>
+									・当社から回答としてお送りした内容について、一部または全部を転載・二次利用することはお控えください。<br>
+									・お客様の個人情報ならびにご相談の内容は、回答以外の目的には使用いたしません。<br>
+									・本ウェブサイトを通して提供いただいた個人情報は当社の「<a
+										href="/privacy_policy/" target="_blank">プライバシーポリシー</a>」を遵守させた上で当社グループ内で共有させていただく場合がございます。<br>
+									<br>
+									「<a
+										href="/privacy_policy/" target="_blank">プライバシーポリシー</a>」及び上記の「お問い合わせに関する留意点」についてご同意いただけましたら、「同意する」にチェックの上「確認」ボタンをクリックしてください。
+								</p>
+								<dl class="formlist">
+									<dt class="required"><span>同意する</span></dt>
+									<dd>
+										<fieldset class="checkbox">
+											<label class="contact-checkbox" for="form-agree" title="同意する">
+												<input class="agreement_err" id="form-agree" name="agreement"
+													type="checkbox" value="同意する">
+											</label>
+											<legend>同意する</legend>
+										</fieldset>
+									</dd>
+								</dl>
+								<p class="errortext pperror agreement_msg"></p>
+								<div class="submitbox">
+									<label class="submit" for="form-submit" title="確認">
+										<input class="bgc2" id="form-submit" name="form-submit" type="submit" value="確認" onclick="confirmMail();">
+									</label>
+									<label class="reset" for="form-reset" title="リセット">
+										<input class="bgc5" id="form-reset" name="form-reset" type="button" value="リセット">
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="group-company inc_group-company" id="group-company"><!-- /include/inc_group-company --></div>
+		<footer class="inc_footer"><!-- /include/inc_footer --></footer>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="/addcommon/js/slick.min.js"></script>
+	<script src="/addcommon/js/remodal.js"></script>
+	<script src="/addcommon/js/common.js?v=11"></script>
+	<script src="/addcommon/js/contact.js"></script>
+	<script type="text/javascript" src="/common/js/mailform.js"></script>
+</body>
+
+</html>

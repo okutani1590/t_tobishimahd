@@ -1,0 +1,897 @@
+@charset "UTF-8";
+#inner .main .wrap::before {
+    transform: translate(-50%, -50%) rotate(70deg);
+    top: 50%;
+    display: none;
+}
+#inner.ir header .gmenu .box a {
+    color: #fff;
+}
+#inner.ir header.show .gmenu .box a {
+    color: #000;
+}
+#inner.ir header .gmenu .box.search .icon img {
+    opacity: 1;
+}
+#inner.ir header .gmenu .box.search .icon img+img {
+    opacity: 0;
+}
+#inner.ir header.show .gmenu .box.search .icon img {
+    opacity: 0;
+}
+#inner.ir header.show .gmenu .box.search .icon img+img {
+    opacity: 1;
+}
+#inner.ir .main .wrap>.bg {
+    background: url(../../images/ir/img_visual.webp) no-repeat center center / cover;
+}
+#inner.ir .visual {
+    margin-bottom: 320px;
+}
+#inner.ir .breadlist,
+#inner.ir .breadlist a {
+    color: #fff;
+}
+.content {
+    padding-top: 30px;
+    min-height: 0;
+}
+#inner.ir .main .wrap {
+    background: #fff;
+}
+#inner.ir .content {
+    background: #fff;
+    padding-bottom: 0;
+}
+.content .news {
+    margin: -130px 0 0 0;
+    background: #ededed;
+    border-radius: 100px 100px 0 0;
+    padding: 100px 0 250px 0;
+}
+.content .news>.inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.content .news .info {
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+}
+.content .news .info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .news .info h2 span {}
+.content .news .info .label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .news .info .category,
+.content .news>.inner>.category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+}
+.content .news .info .category a,
+.content .news>.inner>.category a {
+    display: block;
+    /* margin: 0 auto; */
+}
+.content .news .list {
+    width: calc(100% - 370px);
+    margin-top: 23px;
+}
+.content .news ul.newslist {}
+.content .news ul.newslist li {
+    opacity: 0;
+    transition: 0.6s ease all;
+}
+.content .news ul.newslist.active li {
+    opacity: 1;
+    transition-delay: 0.9s;
+}
+.content .news ul.newslist.active li:nth-child(1) {
+    transition-delay: 0s;
+}
+.content .news ul.newslist.active li:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.content .news ul.newslist.active li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+.content .news ul.newslist.active li:nth-child(4) {
+    transition-delay: 0.3s;
+}
+.content .news ul.newslist.active li:nth-child(5) {
+    transition-delay: 0.4s;
+}
+.content .news ul.newslist.active li:nth-child(6) {
+    transition-delay: 0.5s;
+}
+.content .news ul.newslist.active li:nth-child(7) {
+    transition-delay: 0.6s;
+}
+.content .news ul.newslist.active li:nth-child(8) {
+    transition-delay: 0.7s;
+}
+.content .news ul.newslist.active li:nth-child(9) {
+    transition-delay: 0.8s;
+}
+.content .library,
+.content .contents {
+    margin: -130px 0 0 0;
+    background: #ededed;
+    border-radius: 100px 100px 0 0;
+    padding: 200px 0 300px 0;
+    position: relative;
+}
+.content .library::before,
+.content .contents::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 476px;
+    background: url(../../images/ir/bg_library.webp) no-repeat center center / cover;
+    border-radius: 100px 100px 0 0;
+}
+.content .contents::before {
+    background-image: url(../../images/ir/bg_content.webp);
+}
+.content .library>.inner,
+.content .contents>.inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+.content .library>.inner>.info,
+.content .contents>.inner>.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+}
+.content .library .info h2,
+.content .contents .info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .library .info h2 span {}
+.content .library>.inner>.info .label,
+.content .contents>.inner>.info .label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.content .library .linkstyle {}
+.content .library .linkstyle .img img,
+.content .contents .linkstyle .img img {
+    height: auto;
+}
+.content .library .linkstyle .info,
+.content .contents .linkstyle .info {
+    margin-top: 11px;
+}
+.content .library .linkstyle .info .label,
+.content .contents .linkstyle .info .label {
+    font-size: 20px;
+    font-weight: 600;
+}
+.content .schedule {
+    margin: -130px 0 0 0;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+    padding: 100px 0 250px 0;
+    position: relative;
+    z-index: 200;
+}
+.content .schedule>.inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    align-items: start;
+}
+.content .schedule .info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.content .schedule .info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .schedule .info h2 span {}
+.content .schedule>.inner>.info .label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .schedule .schedulebox {}
+.content .schedule .schedulebox .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+#inner.shareholder_affairs .intro .inner .insec {}
+#inner.shareholder_affairs .intro .inner .insec h3 {}
+#inner.shareholder_affairs .intro .inner .insec .text {}
+#inner.shareholder_affairs .sec+.sec {
+    margin-top: 100px;
+}
+#inner.shareholder_affairs .sec .inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+#inner.shareholder_affairs .sec .inner h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+#inner.shareholder_affairs .sec .inner h2 span {}
+#inner.shareholder_affairs .sec .inner .insec {
+    margin-top: 35px;
+}
+#inner.shareholder_affairs .sec .inner .insec h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#inner.shareholder_affairs .sec .inner .insec .text {
+    font-size: 13px;
+    line-height: 1.8em;
+}
+#inner.shareholder_affairs .sec .inner .insec .text a {
+    color: #0077FF;
+    text-decoration: underline;
+}
+#inner.shareholder_affairs .sec .inner .insec .insec2 {
+    margin-top: 35px;
+}
+#inner.shareholder_affairs .sec .inner .insec .insec2 h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#inner.shareholder_affairs .sec .inner .insec .insec2 .text {}
+#inner.shareholder_affairs .haitou {}
+#inner.shareholder_affairs .haitou .inner {}
+#inner.shareholder_affairs .haitou .inner h2 {}
+#inner.shareholder_affairs .haitou .inner h2 span {}
+#inner.shareholder_affairs .haitou .inner .insec {}
+#inner.shareholder_affairs .haitou .inner .insec h3 {}
+#inner.shareholder_affairs .haitou .inner .insec .text {}
+#inner.shareholder_affairs .haitou .inner .insec ol {
+    margin-top: 50px;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li+li {
+    margin-top: 50px;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .info {
+    width: calc(100% / 2 - 30px);
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .info .title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .info .title span {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #005EC0 0%, #48E3FF 33%, #48E3FF 50%, #fff 50%, #fff 66%, transparent 66%, transparent);
+    background-size: 420%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-right: 13px;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .info .text {}
+#inner.shareholder_affairs .haitou .inner .insec ol li .info .note {
+    font-size: 11px;
+    margin-top: 18px;
+    line-height: 1.8em;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .img {
+    width: calc(100% / 2 - 30px);
+    border-radius: 18px;
+    overflow: hidden;
+}
+#inner.shareholder_affairs .haitou .inner .insec ol li .img img {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 h4 {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 .text {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle {
+    margin-top: 20px;
+}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr th {
+    padding: 30px 30px;
+}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td {
+    padding: 30px 30px;
+}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td strong {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td .mini {}
+#inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td a {}
+#inner.shareholder_affairs .faq {}
+#inner.shareholder_affairs .faq .inner {}
+#inner.shareholder_affairs .faq .inner h2 {}
+#inner.shareholder_affairs .faq .inner h2 span {}
+#inner.shareholder_affairs .faq .inner .insec {
+    margin-top: 20px;
+}
+#inner.shareholder_affairs .faq .inner .insec h3 {
+    margin: 0;
+}
+#inner.shareholder_affairs .faq .inner .insec h3 button {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+    padding: 20px 0 20px 0;
+    position: relative;
+}
+#inner.shareholder_affairs .faq .inner .insec h3 button::before {
+    content: "";
+    right: 3px;
+    top: 41px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #0B528A;
+    border-width: 10px;
+    margin-top: -10px;
+    transform: rotate(90deg);
+}
+#inner.shareholder_affairs .faq .inner .insec h3 button.open::before {
+    transform: rotate(-90deg);
+    top: 30px;
+}
+#inner.shareholder_affairs .faq .inner .insec dl {
+    display: none;
+}
+#inner.shareholder_affairs .faq .inner .insec dl dt {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    padding: 0px 0 0 30px;
+    margin-top: 20px;
+}
+#inner.shareholder_affairs .faq .inner .insec dl dt span {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    line-height: 1.3em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #005EC0 0%, #48E3FF 33%, #48E3FF 50%, #fff 50%, #fff 66%, transparent 66%, transparent);
+    background-size: 420%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+#inner.shareholder_affairs .faq .inner .insec dl dd {
+    border-bottom: 1px solid #000;
+    border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+    font-size: 13px;
+    position: relative;
+    padding: 0px 0 20px 30px;
+    margin-top: 5px;
+}
+#inner.shareholder_affairs .faq .inner .insec dl dd span {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    line-height: 1.3em;
+}
+#inner.shareholder_affairs .faq .inner .insec dl dd a {
+    color: #0077FF;
+    text-decoration: underline;
+}
+#inner.shareholder_affairs .faq .inner table.tablestyle {
+    margin-top: 60px;
+}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody {}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr {}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr th {
+    padding: 30px 30px;
+}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td {
+    padding: 30px 30px;
+}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td strong {}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td .mini {}
+#inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td a {}
+#inner.shareholder_affairs .reference {}
+#inner.shareholder_affairs .reference .inner {}
+#inner.shareholder_affairs .reference .inner h2 {}
+#inner.shareholder_affairs .reference .inner h2 span {}
+#inner.shareholder_affairs .reference .inner .irlist {
+    margin-top: 30px;
+}
+#inner.shareholder_affairs .reference .inner .irlist ul {}
+#inner.shareholder_affairs .reference .inner .irlist ul li {}
+#inner.shareholder_affairs .reference .inner .irlist ul li a.pdf {}
+#inner.shareholder_affairs .reference .inner .irlist ul li a.pdf span {}
+#inner.shareholder_affairs .reference .inner .irlist ul li a.pdf span .size {}
+@media screen and (max-width: 767px) {
+    #inner.ir header .bt_menu span {
+        color: #fff;
+    }
+    #inner.ir header .bt_menu::before,
+    #inner.ir header .bt_menu::after {
+        background: #fff;
+    }
+    #inner.ir header.show .bt_menu span {
+        color: #000;
+    }
+    #inner.ir header.show .bt_menu::before,
+    #inner.ir header.show .bt_menu::after {
+        background: #000;
+    }
+    #inner.ir header.open .bt_menu span {
+        color: #fff;
+    }
+    #inner.ir header.open .bt_menu::before,
+    #inner.ir header.open .bt_menu::after {
+        background: #fff;
+    }
+    #inner.ir .main .wrap::before {
+        transform: translate(-50%, -50%) rotate(80deg);
+        top: 700px;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        display: none;
+    }
+    .content {
+        padding-top: 20px;
+    }
+    #inner.ir header .gmenu .box a {
+        color: #fff;
+    }
+    #inner.ir header.show .gmenu .box a {
+        color: #000;
+    }
+    #inner.ir header .gmenu .box.search .icon img {
+        opacity: 1;
+    }
+    #inner.ir header .gmenu .box.search .icon img+img {
+        opacity: 0;
+    }
+    #inner.ir header.show .gmenu .box.search .icon img {
+        opacity: 0;
+    }
+    #inner.ir header.show .gmenu .box.search .icon img+img {
+        opacity: 1;
+    }
+    #inner.ir .main .wrap>.bg {
+        background: url(../../images/ir/img_visual.webp) no-repeat center center / cover;
+    }
+    #inner.ir .visual {
+        margin-bottom: 160px;
+    }
+    #inner.ir .breadlist,
+    #inner.ir .breadlist a {
+        color: #fff;
+    }
+    .content .news {
+        margin: -60px 0 0px 0;
+        background: #ededed;
+        border-radius: 40px 40px 0 0;
+        padding: 60px 0 100px 0;
+    }
+    .content .news>.inner {
+        display: block;
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content .news .info {
+        height: auto;
+        min-height: 0;
+        display: block;
+    }
+    .content .news .info h2 {
+        /* width: 110%; */
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .content .news .info h2 span {}
+    .content .news .info .label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .content .news>.inner>.category {
+        margin-top: 30px;
+    }
+    .content .news>.inner>.category a {
+        display: block;
+        margin: 0 auto;
+    }
+    .content .news .list {
+        width: auto;
+        margin-top: 23px;
+    }
+    .content .news ul.newslist {}
+    .content .news ul.newslist li {
+        opacity: 0;
+        transition: 0.6s ease all;
+    }
+    .content .news ul.newslist.active li {
+        opacity: 1;
+        transition-delay: 0.9s;
+    }
+    .content .news ul.newslist.active li:nth-child(1) {
+        transition-delay: 0s;
+    }
+    .content .news ul.newslist.active li:nth-child(2) {
+        transition-delay: 0.1s;
+    }
+    .content .news ul.newslist.active li:nth-child(3) {
+        transition-delay: 0.2s;
+    }
+    .content .news ul.newslist.active li:nth-child(4) {
+        transition-delay: 0.3s;
+    }
+    .content .news ul.newslist.active li:nth-child(5) {
+        transition-delay: 0.4s;
+    }
+    .content .news ul.newslist.active li:nth-child(6) {
+        transition-delay: 0.5s;
+    }
+    .content .news ul.newslist.active li:nth-child(7) {
+        transition-delay: 0.6s;
+    }
+    .content .news ul.newslist.active li:nth-child(8) {
+        transition-delay: 0.7s;
+    }
+    .content .news ul.newslist.active li:nth-child(9) {
+        transition-delay: 0.8s;
+    }
+    .content .library,
+    .content .contents {
+        margin: -40px 0 0 0;
+        background: #ededed;
+        border-radius: 40px 40px 0 0;
+        padding: 100px 0 100px 0;
+        position: relative;
+    }
+    .content .library::before,
+    .content .contents::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 276px;
+        background: url(../../images/ir/bg_library.webp) no-repeat center center / cover;
+        border-radius: 40px 40px 0 0;
+    }
+    .content .contents::before {
+        background-image: url(../../images/ir/bg_content.webp);
+    }
+    .content .library>.inner,
+    .content .contents>.inner {
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content .library>.inner>.info,
+    .content .contents>.inner>.info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 68px;
+    }
+    .content .library .info h2,
+    .content .contents .info h2 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .content .library .info h2 span {}
+    .content .library>.inner>.info .label,
+    .content .contents>.inner>.info .label {
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 5px;
+    }
+    .content .library .linkstyle {}
+    .content .library .linkstyle .img img,
+    .content .contents .linkstyle .img img {
+        height: auto;
+    }
+    .content .library .linkstyle .info,
+    .content .contents .linkstyle .info {
+        margin-top: 11px;
+    }
+    .content .library .linkstyle .info .label,
+    .content .contents .linkstyle .info .label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .content .library .linkstyle .info .title,
+    .content .contents .linkstyle .info .title {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+    .content .schedule {
+        margin: -40px 0 0 0;
+        background: #fff;
+        border-radius: 40px 40px 0 0;
+        padding: 70px 0 70px 0;
+        position: relative;
+        z-index: 200;
+    }
+    .content .schedule>.inner {
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        align-items: start;
+    }
+    .content .schedule .info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .content .schedule .info h2 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .content .schedule .info h2 span {}
+    .content .schedule>.inner>.info .label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .content .schedule .schedulebox {}
+    .content .schedule .schedulebox .title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 17px;
+    }
+    #inner.shareholder_affairs .intro .inner .insec {}
+    #inner.shareholder_affairs .intro .inner .insec h3 {}
+    #inner.shareholder_affairs .intro .inner .insec .text {}
+    #inner.shareholder_affairs .sec+.sec {
+        margin-top: 60px;
+    }
+    #inner.shareholder_affairs .sec .inner {
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    #inner.shareholder_affairs .sec .inner h2 {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+    #inner.shareholder_affairs .sec .inner h2 span {}
+    #inner.shareholder_affairs .sec .inner .insec {
+        margin-top: 30px;
+    }
+    #inner.shareholder_affairs .sec .inner .insec h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    #inner.shareholder_affairs .sec .inner .insec .text {
+        font-size: 13px;
+        line-height: 1.8em;
+    }
+    #inner.shareholder_affairs .sec .inner .insec .insec2 {
+        margin-top: 35px;
+    }
+    #inner.shareholder_affairs .sec .inner .insec .insec2 h4 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #inner.shareholder_affairs .sec .inner .insec .insec2 .text {}
+    #inner.shareholder_affairs .haitou {}
+    #inner.shareholder_affairs .haitou .inner {}
+    #inner.shareholder_affairs .haitou .inner h2 {}
+    #inner.shareholder_affairs .haitou .inner h2 span {}
+    #inner.shareholder_affairs .haitou .inner .insec {}
+    #inner.shareholder_affairs .haitou .inner .insec h3 {}
+    #inner.shareholder_affairs .haitou .inner .insec .text {}
+    #inner.shareholder_affairs .haitou .inner .insec ol {
+        margin-top: 50px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li+li {
+        margin-top: 50px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .info {
+        width: auto;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .info .title {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .info .title span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(90deg, #005EC0 0%, #48E3FF 33%, #48E3FF 50%, #fff 50%, #fff 66%, transparent 66%, transparent);
+        background-size: 420%;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        font-size: 18px;
+        margin-right: 13px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .info .text {}
+    #inner.shareholder_affairs .haitou .inner .insec ol li .info .note {
+        font-size: 11px;
+        margin-top: 24px;
+        line-height: 1.8em;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .img {
+        width: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec ol li .img img {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 h4 {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 .text {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle {
+        margin-top: 20px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr th {
+        padding: 16px 16px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td {
+        padding: 24px 16px;
+    }
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td strong {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td .mini {}
+    #inner.shareholder_affairs .haitou .inner .insec .insec2 table.tablestyle tbody tr td a {}
+    #inner.shareholder_affairs .faq {}
+    #inner.shareholder_affairs .faq .inner {}
+    #inner.shareholder_affairs .faq .inner h2 {}
+    #inner.shareholder_affairs .faq .inner h2 span {}
+    #inner.shareholder_affairs .faq .inner .insec {
+        margin-top: 20px;
+    }
+    #inner.shareholder_affairs .faq .inner .insec h3 {
+        margin: 0;
+    }
+    #inner.shareholder_affairs .faq .inner .insec h3 button {
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 1px solid #000;
+        border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+        padding: 16px 0 16px 0;
+        position: relative;
+    }
+    #inner.shareholder_affairs .faq .inner .insec h3 button::before {
+        content: "";
+        right: 3px;
+        top: 41px;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #0B528A;
+        border-width: 8px;
+        margin-top: -8px;
+        transform: rotate(90deg);
+    }
+    #inner.shareholder_affairs .faq .inner .insec h3 button.open::before {
+        transform: rotate(-90deg);
+        top: 30px;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl {
+        display: none;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl dt {
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        padding: 0px 0 0 30px;
+        margin-top: 20px;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl dt span {
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        line-height: 1.3em;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(90deg, #005EC0 0%, #48E3FF 33%, #48E3FF 50%, #fff 50%, #fff 66%, transparent 66%, transparent);
+        background-size: 420%;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl dd {
+        border-bottom: 1px solid #000;
+        border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+        font-size: 13px;
+        position: relative;
+        padding: 0px 0 20px 30px;
+        margin-top: 5px;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl dd span {
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        line-height: 1.3em;
+    }
+    #inner.shareholder_affairs .faq .inner .insec dl dd a {
+        color: #0077FF;
+        text-decoration: underline;
+    }
+    #inner.shareholder_affairs .faq .inner table.tablestyle {
+        margin-top: 60px;
+    }
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody {}
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr {}
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr th {
+        padding: 30px 30px;
+    }
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td {
+        padding: 30px 30px;
+    }
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td strong {}
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td .mini {}
+    #inner.shareholder_affairs .faq .inner table.tablestyle tbody tr td a {}
+    #inner.shareholder_affairs .reference {}
+    #inner.shareholder_affairs .reference .inner {}
+    #inner.shareholder_affairs .reference .inner h2 {}
+    #inner.shareholder_affairs .reference .inner h2 span {}
+    #inner.shareholder_affairs .reference .inner .irlist {
+        margin-top: 30px;
+    }
+    #inner.shareholder_affairs .reference .inner .irlist ul {}
+    #inner.shareholder_affairs .reference .inner .irlist ul li {}
+    #inner.shareholder_affairs .reference .inner .irlist ul li a.pdf {}
+    #inner.shareholder_affairs .reference .inner .irlist ul li a.pdf span {}
+    #inner.shareholder_affairs .reference .inner .irlist ul li a.pdf span .size {}
+}

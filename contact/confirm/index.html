@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="canonical" href="https://www.tobishimahd.co.jp/contact/confirm/">
+
+<script type="text/javascript">
+if (screen.width >= 768) document.write('<meta name="viewport" content="width=1280"><meta name="format-detection" content="telephone=no">');
+else if (screen.width <= 374) document.write('<meta name="viewport" content="width=375"><meta name="format-detection" content="telephone=no">');
+else document.write('<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.5">');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/addcommon/css/modal-video.css" />
+<link rel="stylesheet" href="/addcommon/css/slick.css" />
+<link rel="stylesheet" href="/addcommon/css/slick-theme.css" />
+<link rel="stylesheet" href="/addcommon/css/remodal.css" />
+<link rel="stylesheet" href="/addcommon/css/remodal-default-theme.css" />
+<link rel="stylesheet" href="/addcommon/css/common.css?v=9" />
+<link rel="stylesheet" href="/addcommon/css/contact.css?v=3" />
+
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="飛島ホールディングス" />
+<meta property="og:description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+<meta property="og:title" content="入力確認｜お問い合わせフォーム｜飛島ホールディングス">
+<meta property="og:url" content="https://www.tobishimahd.co.jp/contact/confirm/">
+<meta property="og:image" content="https://www.tobishimahd.co.jp/images/ogp.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+	
+<meta name="description" content="飛島ホールディングスのお問い合わせフォームページでは、当社に関するご質問やご意見を簡単に送信していただけます。投資家情報、株主手続き、事業内容についてのお問い合わせはもちろん、その他のお問い合わせも迅速に対応いたします。お気軽にご連絡ください。">
+<title>入力確認｜お問い合わせフォーム｜飛島ホールディングス</title>
+
+	<script type="text/javascript">
+		<!--
+		// form submit
+		function back(frmObj) {
+			frmObj.submit();
+			return false;
+		}
+		// form action change & submit
+		function sendmail(frmObj) {
+			if (frmObj.elements['category'].value == 'ホールディングスに関して') {
+				frmObj.action = '/contact/sendmail_1';
+			} else if (frmObj.elements['category'].value == '飛島建設に関して' || frmObj.elements['category'].value == 'その他のグループ企業に関して') {
+				frmObj.action = '/contact/sendmail_2';
+			} else {
+				return false;
+			}
+			frmObj.submit();
+			return false;
+		}
+		// -->
+	</script>
+</head>
+
+<body id="inner" class="contact confirm">
+<section id="top" class="outline">
+<header class="inc_header"><!-- /include/inc_header --></header>
+<div class="main">
+	<div class="wrap">
+		<div class="breadlist">
+			<div class="inner">
+				<a href="/">TOP</a> &gt; <span>お問い合わせ</span>			
+			</div>
+		</div>
+		<div class="visual">
+			<div class="inner">
+				<p class="label textstyle reverse scrollactive"><span>Contact</span></p>
+				<h1 class="scrollactive" data-delay="600">お問い合わせ</h1>
+			</div>
+		</div>
+		<div class="content">
+			<div class="formbox">
+				<div class="inner">
+					<p class="lead">以下の内容で送信してよろしいですか？</p>
+					<form method="post" action="/contact/">
+						<dl class="formlist">
+							<dt class="required"><span>カテゴリー</span></dt>
+							<dd>
+								<p class="confirmtext category"></p>
+							</dd>
+							<dt class="required"><span>件名</span></dt>
+							<dd>
+								<p class="confirmtext subject"></p>
+							</dd>
+							<dt><span>会社・団体名等</span></dt>
+							<dd>
+								<p class="confirmtext company"></p>
+							</dd>
+							<dt><span>部署名等</span></dt>
+							<dd>
+								<p class="confirmtext department"></p>
+							</dd>
+							<dt class="required"><span>氏名</span></dt>
+							<dd>
+								<p class="confirmtext name"></p>
+							</dd>
+							<dt><span>電話番号</span></dt>
+							<dd>
+								<p class="confirmtext tel"></p>
+							</dd>
+							<dt class="required"><span>メールアドレス</span></dt>
+							<dd>
+								<p class="confirmtext email"></p>
+							</dd>
+							<dt class="required"><span>お問合せ内容</span></dt>
+							<dd>
+								<p class="confirmtext question"></p>
+							</dd>
+						</dl>
+						<div class="submitbox">
+							<label class="submit" for="form-submit" title="送信">
+								<input class="bgc2" id="form-submit" name="form-submit" type="submit" value="送信" onclick="return sendmail(this.form);">
+							</label>
+							<label class="buck" for="form-back" title="戻る">
+								<input class="bgc5" id="form-back" name="form-reset" type="button" value="戻る" onclick="return back(this.form);">
+							</label>
+						</div>
+                        <input type="hidden" name="category" value="" />
+                        <input type="hidden" name="subject" value="" />
+                        <input type="hidden" name="name" value="" />
+                        <input type="hidden" name="tel" value="" />
+                        <input type="hidden" name="email" value="" />
+                        <input type="hidden" name="email_confirm" value="" />
+                        <input type="hidden" name="company" value="" />
+                        <input type="hidden" name="department" value="" />
+                        <input type="hidden" name="question" value="" />
+                        <input type="hidden" name="agreement" value="" />
+                        <input type="hidden" name="now" class="current_time" value="" />
+
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="group-company inc_group-company" id="group-company"><!-- /include/inc_group-company --></div>
+<footer class="inc_footer"><!-- /include/inc_footer --></footer>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/addcommon/js/slick.min.js"></script>
+<script src="/addcommon/js/remodal.js"></script>
+<script src="/addcommon/js/common.js?v=11"></script>
+</body>
+</html>

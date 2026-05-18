@@ -1,0 +1,1143 @@
+@charset "UTF-8";
+#inner .main .wrap::before {
+    transform: translate(-50%, -50%) rotate(70deg);
+    top: 50%;
+    display: none;
+}
+#inner.corporate header .gmenu .box a {
+    color: #fff;
+}
+#inner.corporate header.show .gmenu .box a {
+    color: #000;
+}
+#inner.corporate header .gmenu .box.search .icon img {
+    opacity: 1;
+}
+#inner.corporate header .gmenu .box.search .icon img+img {
+    opacity: 0;
+}
+#inner.corporate header.show .gmenu .box.search .icon img {
+    opacity: 0;
+}
+#inner.corporate header.show .gmenu .box.search .icon img+img {
+    opacity: 1;
+}
+#inner.corporate .main .wrap>.bg {
+    background: url(../../images/corporate/img_visual.webp) no-repeat center center / cover;
+}
+#inner.corporate.profile .main .wrap>.bg {
+    background: url(../../images/corporate/profile/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.corporate.organization .main .wrap>.bg {
+    background: url(../../images/corporate/organization/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.corporate.innovate .main .wrap>.bg {
+    background: url(../../images/corporate/innovate/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.corporate .visual {
+    margin-bottom: 420px;
+}
+#inner.corporate.profile .visual,
+#inner.corporate.organization .visual {
+    margin-bottom: 200px;
+}
+#inner.corporate.innovate .visual {
+    margin-bottom: 247px;
+}
+#inner.corporate .breadlist,
+#inner.corporate .breadlist a {
+    color: #fff;
+}
+#inner.corporate .visual h1 {
+    color: #fff;
+}
+.content {
+    padding-top: 30px;
+    min-height: 0;
+}
+#inner.corporate .main .wrap {
+    /* background: #fff; */
+}
+#inner.corporate .content {
+    /* background: #fff; */
+    padding-bottom: 0;
+}
+#inner.corporate .content .corporatemenu {
+    background: #ededed;
+    padding: 60px 0 200px 0;
+    position: relative;
+}
+#inner.corporate .content .corporatemenu a.linkstyle .label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+#inner.corporate .content .corporatemenu a.linkstyle .title {
+    font-size: 15px;
+    opacity: 0;
+    transition: 0.6s +0.4s ease all;
+}
+#inner.corporate .content .corporatemenu a.linkstyle.active .title {
+    opacity: 1;
+}
+#inner.corporate.index .content .message,
+#inner.corporate.profile .content .profile,
+#inner.corporate.organization .content .sec,
+#inner.corporate.innovate .content .introduction {
+    margin: -130px 0 0 0;
+    background: #ededed;
+    border-radius: 100px 100px 0 0;
+    padding: 90px 0 90px 0;
+    position: relative;
+    transition: background 0.6s ease;
+}
+#inner.corporate.organization .content .sec {
+    background: none;
+    margin-top: 0;
+    z-index: 600;
+    padding: 0;
+}
+#inner.corporate.organization .content .concept {
+    background: #ededed;
+    z-index: 400;
+    margin-top: -130px;
+    padding: 90px 0 90px 0;
+}
+#inner.corporate.organization .content .concept.hide {
+    /* background: none; */
+}
+/*
+#inner.corporate .content .message::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 476px;
+	background: url(../../images/ir/bg_library.webp) no-repeat center center / cover;
+	border-radius: 100px 100px 0 0;
+}
+*/
+#inner.corporate .content .corporatemenu .fbox,
+#inner.corporate.index .content .message>.inner,
+#inner.corporate.profile .content .profile>.inner,
+#inner.corporate.organization .content .sec>.inner,
+#inner.corporate.innovate .content .introduction>.inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+#inner.corporate.organization .content .sec>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 90px 0 90px 0;
+}
+#inner.corporate.organization .content .sec.fixed>.inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#inner.corporate.organization .content .sec.fixedend>.inner {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+#inner.corporate.organization .content .concept>.inner {
+    display: block;
+    padding: 0;
+}
+#inner.corporate.index .content .message>.inner>.info,
+#inner.corporate.profile .content .profile>.inner>.info,
+#inner.corporate.organization .content .sec>.inner>.info,
+#inner.corporate.innovate .content .introduction>.inner>.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+}
+#inner.corporate.profile .content .profile>.inner>.info,
+#inner.corporate.organization .content .sec>.inner>.info,
+#inner.corporate.innovate .content .introduction>.inner>.info {
+    margin-bottom: 55px;
+}
+#inner.corporate.index .content .message>.inner>.info h2,
+#inner.corporate.profile .content .profile>.inner>.info h2,
+#inner.corporate.organization .content .sec>.inner>.info h2,
+#inner.corporate.innovate .content .introduction>.inner>.info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+#inner.corporate .content .message>.inner>.info h2 span {}
+#inner.corporate.index .content .message>.inner>.info .label,
+#inner.corporate.profile .content .profile>.inner>.info .label,
+#inner.corporate.organization .content .sec>.inner>.info .label,
+#inner.corporate.innovate .content .introduction>.inner>.info .label {
+    font-size: 18px;
+    font-weight: 500;
+}
+#inner.corporate.organization .content .sec>.inner>.info .label {
+    color: #fff;
+}
+#inner.corporate.organization .content .concept>.inner>.info .label {
+    color: #333;
+}
+#inner.corporate .content .message .fbox {
+    justify-content: space-between;
+}
+#inner.corporate .content .message .fbox .info {
+    width: calc(100% / 2 - 30px);
+}
+#inner.corporate .content .message .fbox .info .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+#inner.corporate .content .message .fbox .info .text {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.7em;
+}
+#inner.corporate .content .message .fbox .info .name {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.7em;
+}
+#inner.corporate .content .message .fbox .info .name span {
+    font-size: 13px;
+}
+#inner.corporate .content .message .fbox .info .name strong {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	gap: 20px;
+	margin-top: 9px;
+}
+#inner.corporate .content .message .fbox .info .name strong img {width: 130px;}
+#inner.corporate .content .message .fbox .img {
+    width: calc(100% / 2 - 30px);
+}
+#inner.corporate .content .profile table {
+    font-size: 11px;
+    line-height: 1.8em;
+    border-bottom: 1px solid #777777;
+}
+#inner.corporate .content .profile table tbody {}
+#inner.corporate .content .profile table tbody tr {}
+#inner.corporate .content .profile table tbody tr th {
+    border-top: 1px solid #777777;
+    padding: 10px 0;
+    width: 15%;
+}
+#inner.corporate .content .profile table tbody tr td {
+    border-top: 1px solid #777777;
+    padding: 10px 0;
+    width: 85%;
+}
+#inner.corporate .content .profile table tbody tr td a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: linear-gradient(to right, rgba(125, 185, 232, 1) 0%, rgba(11, 82, 136, 1) 99%);
+    letter-spacing: 0;
+    font-size: 12px;
+}
+#inner.corporate .content .profile table tbody tr td dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#inner.corporate .content .profile table tbody tr td dl dt {
+    width: 150px;
+}
+#inner.corporate .content .profile table tbody tr td dl dd {
+    width: calc(100% - 150px);
+}
+#inner.corporate .content .profile table tbody tr td ol {
+}
+#inner.corporate .content .profile table tbody tr td ol li {position: relative;padding-left: 18px;}
+#inner.corporate .content .profile table tbody tr td ol li span {position: absolute;left: 0;top: 0px;}
+#inner.corporate.profile .remodal iframe {
+    height: 500px;
+}
+#inner.corporate.profile .remodal .text {
+    font-size: 12px;
+    line-height: 1.8em;
+    margin-top: 20px;
+}
+#inner.corporate.innovate .visual .bt_movie {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -105px;
+	width: 287px;
+	opacity: 0;
+	transition: transform 0.3s ease, left 0.3s ease, opacity 0.6s +0.6s ease;
+}
+#inner.corporate.innovate .visual h1.active + .bt_movie {
+	opacity: 1;
+}
+#inner.corporate.innovate .visual .bt_movie:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+#inner.corporate.innovate .visual .bt_movie img {
+	
+}
+#inner.corporate.innovate .content .introduction {}
+#inner.corporate.innovate .content .introduction .lead {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+#inner.corporate.innovate .content .introduction .box+.box {
+    margin-top: 90px;
+}
+#inner.corporate.innovate .content .introduction .box .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#inner.corporate.innovate .content .introduction .box .title span {
+    letter-spacing: 0.05em;
+}
+#inner.corporate.innovate .content .introduction .box .text {
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 1.8em;
+}
+#inner.corporate.innovate .content .introduction .box .irlist {
+    margin-top: 25px;
+    max-width: 500px;
+}
+#inner.corporate.organization .content .bgbox {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+#inner.corporate.organization .content .bgbox>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/corporate/organization/bg_purpose.webp) no-repeat center center / cover;
+    opacity: 0;
+    transition: 0.6s ease all;
+}
+#inner.corporate.organization .content .bgbox>div.bg2 {
+    background-image: url(../../images/corporate/organization/bg_mission.webp);
+}
+#inner.corporate.organization .content .bgbox>div.bg3 {
+    background-image: url(../../images/corporate/organization/bg_value.webp);
+}
+#inner.corporate.organization .content .bgbox>div.bg4 {
+    background-image: url(../../images/corporate/organization/bg_value2.webp);
+}
+#inner.corporate.organization .content .bgbox.bg1>.bg1,
+#inner.corporate.organization .content .bgbox.bg1>.logo,
+#inner.corporate.organization .content .bgbox.bg2>.bg2,
+#inner.corporate.organization .content .bgbox.bg3>.bg3,
+#inner.corporate.organization .content .bgbox.bg4>.bg4 {
+    opacity: 1;
+}
+#inner.corporate.organization .content .bgbox>.logo {
+    background: none;
+}
+#inner.corporate.organization .content .bgbox>.logo img {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 40px);
+    transform: translate(-50%, -50%) scale(3);
+    width: 850px;
+    opacity: 0;
+}
+#inner.corporate.organization .content .bgbox>.hbox {
+    background: none;
+    position: fixed;
+    left: 0;
+    top: calc(50% - 133px);
+    width: 100%;
+    transition: none;
+}
+#inner.corporate.organization .content .bgbox>.hbox.fixed {
+    opacity: 1;
+}
+#inner.corporate.organization .content .bgbox>.hbox.fixedend {
+    opacity: 0;
+}
+#inner.corporate.organization .content .bgbox>.hbox .h2 {
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 1400px;
+    width: 92%;
+    margin: 0 auto;
+}
+#inner.corporate.organization .content .bgbox>.hbox .label {
+    color: #fff;
+    position: relative;
+    max-width: 1400px;
+    width: 92%;
+    margin: 0 auto;
+}
+#inner.corporate.organization .content .bgbox>.hbox .label span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    transition: opacity 0.6s ease;
+}
+#inner.corporate.organization .content .bgbox>.hbox .label span+span {
+    opacity: 0;
+}
+#inner.corporate.organization .content .bgbox>.hbox.label .label span {
+    opacity: 0;
+}
+#inner.corporate.organization .content .bgbox>.hbox.label .label span+span {
+    opacity: 1;
+}
+#inner.corporate.organization .content .concept {
+    box-sizing: border-box;
+}
+#inner.corporate.organization .content .concept .fbox {
+    justify-content: space-between;
+    align-items: center;
+}
+#inner.corporate.organization .content .concept .fbox .img {
+    width: 280px;
+}
+#inner.corporate.organization .content .concept .fbox .info {
+    width: calc(100% - 390px);
+}
+#inner.corporate.organization .content .concept .fbox .info .text {
+    font-size: 15px;
+    line-height: 1.8em;
+    margin-top: 30px;
+}
+#inner.corporate.organization .content .concept .fbox .info .text:nth-child(1) {
+    margin-top: 0;
+}
+#inner.corporate.organization .content .concept .fbox .info ul {
+    margin-top: 30px;
+}
+#inner.corporate.organization .content .concept .fbox .info ul li {
+    font-size: 15px;
+    line-height: 1.8em;
+    background: url(../../images/icons/icon_check.webp) no-repeat left 4px / 19px;
+    padding-left: 27px;
+}
+#inner.corporate.organization .content .sec .body {
+    width: 740px;
+    margin: 130px auto 0 auto;
+}
+#inner.corporate.organization .content .sec .body .title {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#inner.corporate.organization .content .sec .body .title span {
+    line-height: 1em;
+}
+#inner.corporate.organization .content .sec .body .text {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+#inner.corporate.organization .content .value.fixed .info {
+    opacity: 0;
+}
+#inner.corporate.organization .content .value2 .info {
+    opacity: 0;
+    margin-top: 157px;
+}
+#inner.corporate.organization .content .value2.fixedend .info {
+    opacity: 1;
+}
+#inner.corporate.organization .content .value2 .body ol {}
+#inner.corporate.organization .content .value2 .body ol li {
+    position: relative;
+    padding: 0 0 0 72px;
+}
+#inner.corporate.organization .content .value2 .body ol li+li {
+    margin-top: 28px;
+}
+#inner.corporate.organization .content .value2 .body ol li::before {
+    font-size: 80px;
+    content: "1";
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #48E3FF 0%, #a8f2ff 33%, #a8f2ff 50%, #fff 50%, #fff 66%, transparent 66%, transparent 100%);
+    background-size: 420%;
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    height: 80px;
+    width: 50px;
+    line-height: 1em;
+}
+#inner.corporate.organization .content .value2 .body ol li:nth-child(2)::before {
+    content: "2";
+}
+#inner.corporate.organization .content .value2 .body ol li:nth-child(3)::before {
+    content: "3";
+}
+#inner.corporate.organization .content .value2 .body ol li .label {
+    font-size: 30px;
+    line-height: 1.3em;
+}
+#inner.corporate.organization .content .value2 .body ol li .label span {
+    font-weight: 600;
+}
+#inner.corporate.organization .content .value2 .body ol li .lead {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: inherit;
+    margin: 0;
+}
+#inner.corporate.organization .content .value2 .body ol li .text {
+    font-size: 13px;
+    margin-top: 5px;
+}
+#inner.corporate.organization .content .chart {
+    background: #1E1E1E;
+    border-radius: 0;
+    padding-bottom: 230px;
+    margin-bottom: -130px;
+}
+#inner.corporate.organization .content .chart>.inner {
+    display: block;
+}
+#inner.corporate.organization .content .chart .body {
+    width: auto;
+    margin: 0 0 0 0;
+}
+#inner.corporate.organization .content .chart .body .img {
+    margin-top: 80px;
+}
+#inner.corporate.organization .content .chart .body .note {
+    color: #fff;
+    text-align: right;
+    margin-top: 18px;
+    font-size: 12px;
+    position: relative;
+    right: -0.7em;
+}
+@media screen and (max-height: 750px) {
+    #inner.corporate.organization .content .bgbox>.hbox {
+        top: calc(50% - 103px);
+    }
+    #inner.corporate.organization .content .value2 .info {
+        margin-top: 77px;
+    }
+    #inner.corporate.organization .content .sec .body {
+        margin-top: 100px;
+    }
+    #inner.corporate.organization .content .sec .body .title {
+        font-size: 60px;
+        margin-bottom: 23px;
+    }
+    #inner.corporate.organization .content .sec .body .text {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.8em;
+    }
+    #inner.corporate.organization .content .value2 .body {
+        margin-top: 0;
+    }
+    #inner.corporate.organization .content .value2 .body ol li+li {
+        margin-top: 20px;
+    }
+    #inner.corporate.organization .content .value2 .body ol li::before {
+        font-size: 70px;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .label {
+        font-size: 26px;
+        line-height: 1.3em;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .label span {
+        font-weight: 600;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .lead {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: inherit;
+        margin: 0;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .text {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #inner header .bt_menu span {
+        color: #fff;
+    }
+    #inner header .bt_menu::before,
+    #inner header .bt_menu::after {
+        background: #fff;
+    }
+    #inner header.show .bt_menu span {
+        color: #000;
+    }
+    #inner header.show .bt_menu::before,
+    #inner header.show .bt_menu::after {
+        background: #000;
+    }
+    #inner header.open .bt_menu span {
+        color: #fff;
+    }
+    #inner header.open .bt_menu::before,
+    #inner header.open .bt_menu::after {
+        background: #fff;
+    }
+    #inner .main .wrap::before {
+        transform: translate(-50%, -50%) rotate(80deg);
+        top: 700px;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        display: none;
+    }
+    .content {
+        padding-top: 20px;
+    }
+    #inner.corporate header .gmenu .box a {
+        color: #fff;
+    }
+    #inner.corporate header.show .gmenu .box a {
+        color: #fff;
+    }
+    #inner.corporate header .gmenu .box.search .icon img {
+        opacity: 1;
+    }
+    #inner.corporate header .gmenu .box.search .icon img+img {
+        opacity: 0;
+    }
+    #inner.corporate header.show .gmenu .box.search .icon img {
+        opacity: 0;
+    }
+    #inner.corporate header.show .gmenu .box.search .icon img+img {
+        opacity: 1;
+    }
+    #inner.corporate .main .wrap>.bg {
+        background: url(../../images/corporate/img_visual.webp) no-repeat center center / cover;
+    }
+    #inner.corporate.profile .main .wrap>.bg {
+        background: url(../../images/corporate/profile/img_visual.webp) no-repeat center center / cover;
+        height: 380px;
+    }
+    #inner.corporate.organization .main .wrap>.bg {
+        background: url(../../images/corporate/organization/img_visual.webp) no-repeat center center / cover;
+        height: 380px;
+    }
+    #inner.corporate.innovate .main .wrap>.bg {
+        background: url(../../images/corporate/innovate/img_visual.webp) no-repeat center center / cover;
+        height: 500px;
+    }
+    #inner.corporate .visual {
+        margin-bottom: 104px;
+    }
+    #inner.corporate.profile .visual,
+    #inner.corporate.organization .visual,
+    #inner.corporate.innovate .visual {
+        margin-bottom: 104px;
+    }
+    #inner.corporate .breadlist,
+    #inner.corporate .breadlist a {
+        color: #fff;
+    }
+    #inner.corporate .visual h1 {
+        color: #fff;
+    }
+    .content {
+        padding-top: 30px;
+        min-height: 0;
+    }
+    #inner.corporate .main .wrap {
+        /* background: #fff; */
+    }
+    #inner.corporate .content {
+        /* background: #fff; */
+        padding-bottom: 0;
+    }
+    #inner.corporate .content .corporatemenu {
+        background: #ededed;
+        padding: 60px 0 60px 0;
+    }
+    #inner.corporate .content .corporatemenu .fbox {
+        position: relative;
+        gap: 20px;
+    }
+    #inner.corporate .content .corporatemenu .fbox a {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #inner.corporate .content .corporatemenu .fbox a .img {
+        width: calc(50% - 7px);
+    }
+    #inner.corporate .content .corporatemenu .fbox a .info {
+        width: calc(50% - 7px);
+    }
+    #inner.corporate .content .corporatemenu .fbox a .img img {
+        height: 110px;
+    }
+    #inner.corporate .content .corporatemenu .fbox a .label {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    #inner.corporate .content .corporatemenu .fbox a .title {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    #inner.corporate.index .content .message,
+    #inner.corporate.profile .content .profile,
+    #inner.corporate.organization .content .sec,
+    #inner.corporate.innovate .content .introduction {
+        margin: -40px 0 0 0;
+        background: #ededed;
+        border-radius: 40px 40px 0 0;
+        padding: 60px 0 60px 0;
+        position: relative;
+        transition: background 0.6s ease;
+    }
+    #inner.corporate.organization .content .sec {
+        background: none;
+        margin-top: 0;
+        z-index: 600;
+        padding: 0;
+        /* height: auto !important; */
+    }
+    #inner.corporate.organization .content .concept {
+        background: #ededed;
+        z-index: 400;
+        margin-top: -130px;
+        padding: 60px 0px 60px 0;
+    }
+    #inner.corporate.organization .content .concept.hide {
+        /* background: none; */
+    }
+    #inner.corporate.index .content .message,
+    #inner.corporate.profile .content .profile,
+    #inner.corporate.organization .content .concept,
+    #inner.corporate.innovate .content .introduction {
+        margin-top: -60px;
+    }
+    /*
+	#inner.corporate .content .message::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 476px;
+		background: url(../../images/ir/bg_library.webp) no-repeat center center / cover;
+		border-radius: 100px 100px 0 0;
+	}
+	*/
+    #inner.corporate .content .corporatemenu .fbox,
+    #inner.corporate.index .content .message>.inner,
+    #inner.corporate.profile .content .profile>.inner,
+    #inner.corporate.organization .content .sec>.inner,
+    #inner.corporate.innovate .content .introduction>.inner {
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    #inner.corporate.organization .content .sec>.inner {
+        display: flex;
+        padding: 60px 0 160px 0;
+        height: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    #inner.corporate.organization .content .sec.fixed>.inner {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+    #inner.corporate.organization .content .sec.fixedend>.inner {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        transform: none;
+    }
+    #inner.corporate.organization .content .concept>.inner {
+        display: block;
+        padding: 0;
+    }
+    #inner.corporate.index .content .message>.inner>.info,
+    #inner.corporate.profile .content .profile>.inner>.info,
+    #inner.corporate.organization .content .sec>.inner>.info,
+    #inner.corporate.innovate .content .introduction>.inner>.info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    #inner.corporate.profile .content .profile>.inner>.info,
+    #inner.corporate.organization .content .sec>.inner>.info,
+    #inner.corporate.innovate .content .introduction>.inner>.info {
+        margin-bottom: 40px;
+    }
+    #inner.corporate.index .content .message>.inner>.info h2,
+    #inner.corporate.profile .content .profile>.inner>.info h2,
+    #inner.corporate.organization .content .sec>.inner>.info h2,
+    #inner.corporate.innovate .content .introduction>.inner>.info h2 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    #inner.corporate .content .message>.inner>.info h2 span {}
+    #inner.corporate.index .content .message>.inner>.info .label,
+    #inner.corporate.profile .content .profile>.inner>.info .label,
+    #inner.corporate.organization .content .sec>.inner>.info .label,
+    #inner.corporate.innovate .content .introduction>.inner>.info .label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    #inner.corporate.organization .content .sec>.inner>.info .label {
+        color: #fff;
+    }
+    #inner.corporate.organization .content .concept>.inner>.info .label {
+        color: #333;
+    }
+    #inner.corporate .content .message .fbox {
+        justify-content: space-between;
+        display: block;
+    }
+    #inner.corporate .content .message .fbox .info {
+        width: auto;
+    }
+    #inner.corporate .content .message .fbox .info .title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #inner.corporate .content .message .fbox .info .text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.7em;
+    }
+    #inner.corporate .content .message .fbox .info .name {
+        text-align: right;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.7em;
+    }
+    #inner.corporate .content .message .fbox .info .name span {
+        font-size: 12px;
+    }
+    #inner.corporate .content .message .fbox .img {
+        width: auto;
+        margin-top: 30px;
+    }
+    #inner.corporate .content .profile table {
+        font-size: 13px;
+        line-height: 1.8em;
+        border-bottom: 1px solid #777777;
+        display: block;
+    }
+    #inner.corporate .content .profile table tbody {
+        display: block;
+    }
+    #inner.corporate .content .profile table tbody tr {
+        display: block;
+    }
+    #inner.corporate .content .profile table tbody tr th {
+        border-top: 1px solid #777777;
+        padding: 10px 0 0px 0;
+        width: auto;
+        font-weight: bold;
+        display: block;
+    }
+    #inner.corporate .content .profile table tbody tr td {
+        border-top: none;
+        padding: 2px 0 10px 0;
+        width: auto;
+        display: block;
+        line-height: 1.5em;
+    }
+    #inner.corporate .content .profile table tbody tr td a {
+        display: block;
+        color: #fff;
+        padding: 0 10px;
+        border-radius: 20px;
+        margin: 5px 0 3px 0;
+        background: linear-gradient(to right, rgba(125, 185, 232, 1) 0%, rgba(11, 82, 136, 1) 99%);
+        letter-spacing: 0;
+        font-size: 12px;
+        width: 100px;
+        text-align: center;
+    }
+    #inner.corporate .content .profile table tbody tr td dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #inner.corporate .content .profile table tbody tr td dl dt {
+        width: 170px;
+    }
+    #inner.corporate .content .profile table tbody tr td dl dd {
+        width: calc(100% - 170px);
+    }
+    #inner.corporate.profile .remodal iframe {
+        height: 300px;
+    }
+    #inner.corporate.profile .remodal .text {
+        font-size: 11px;
+        line-height: 1.8em;
+        margin-top: 20px;
+    }
+	#inner.corporate.innovate .visual .bt_movie {
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: -55px;
+		width: 200px;
+		opacity: 0;
+		transition: transform 0.3s ease, left 0.3s ease, opacity 0.6s +0.6s ease;
+	}
+	#inner.corporate.innovate .visual h1.active + .bt_movie {
+		opacity: 1;
+	}
+	#inner.corporate.innovate .visual .bt_movie:hover {
+	    opacity: 1;
+	    transform: scale(1);
+	}
+    #inner.corporate.innovate .content .introduction {}
+    #inner.corporate.innovate .content .introduction .lead {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.8em;
+    }
+    #inner.corporate.innovate .content .introduction .box+.box {
+        margin-top: 60px;
+    }
+    #inner.corporate.innovate .content .introduction .box .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-indent: -0.5em;
+        line-height: 1.5em;
+    }
+    #inner.corporate.innovate .content .introduction .box .title span {
+        letter-spacing: 0;
+    }
+    #inner.corporate.innovate .content .introduction .box .text {
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 1.8em;
+    }
+    #inner.corporate.innovate .content .introduction .box .irlist {
+        margin-top: 25px;
+        max-width: 500px;
+    }
+    #inner.corporate.organization .content .bgbox {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 500;
+    }
+    #inner.corporate.organization .content .bgbox>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 130%;
+        background: url(../../images/corporate/organization/bg_purpose.webp) no-repeat center center / cover;
+        opacity: 0;
+        transition: 0.6s ease all;
+    }
+    #inner.corporate.organization .content .bgbox>.logo {
+        height: 100%;
+    }
+    #inner.corporate.organization .content .bgbox>div.bg2 {
+        background-image: url(../../images/corporate/organization/bg_mission.webp);
+    }
+    #inner.corporate.organization .content .bgbox>div.bg3 {
+        background-image: url(../../images/corporate/organization/bg_value.webp);
+    }
+    #inner.corporate.organization .content .bgbox>div.bg4 {
+        background-image: url(../../images/corporate/organization/bg_value2.webp);
+    }
+    #inner.corporate.organization .content .bgbox.bg1>.bg1,
+    #inner.corporate.organization .content .bgbox.bg1>.logo,
+    #inner.corporate.organization .content .bgbox.bg2>.bg2,
+    #inner.corporate.organization .content .bgbox.bg3>.bg3,
+    #inner.corporate.organization .content .bgbox.bg4>.bg4 {
+        opacity: 1;
+    }
+    #inner.corporate.organization .content .bgbox>.logo {
+        background: none;
+    }
+    #inner.corporate.organization .content .bgbox>.logo img {
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 40px);
+        transform: translate(-50%, -50%) scale(3);
+        width: 850px;
+        opacity: 0;
+    }
+    #inner.corporate.organization .content .bgbox>.hbox {
+        display: none;
+    }
+    #inner.corporate.organization .content .concept {
+        box-sizing: border-box;
+        height: auto !important;
+        padding-bottom: 80vh;
+    }
+    #inner.corporate.organization .content .concept .fbox {
+        justify-content: space-between;
+        align-items: center;
+    }
+    #inner.corporate.organization .content .concept .fbox .img {
+        width: 260px;
+    }
+    #inner.corporate.organization .content .concept .fbox .info {
+        width: auto;
+    }
+    #inner.corporate.organization .content .concept .fbox .info .text {
+        font-size: 14px;
+        line-height: 1.8em;
+        margin-top: 20px;
+    }
+    #inner.corporate.organization .content .concept .fbox .info ul {
+        margin-top: 20px;
+    }
+    #inner.corporate.organization .content .concept .fbox .info ul li {
+        font-size: 14px;
+    }
+    #inner.corporate.organization .content .sec .body {
+        width: auto;
+        margin: 80px auto 80px auto;
+        margin: auto 0 auto 0;
+    }
+    #inner.corporate.organization .content .sec .body .title {
+        font-size: 56px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    #inner.corporate.organization .content .sec .body .title span {
+        line-height: 1em;
+    }
+    #inner.corporate.organization .content .sec .body .text {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.8em;
+    }
+    #inner.corporate.organization .content .value.fixed .info {
+        opacity: 1;
+    }
+    #inner.corporate.organization .content .value2 {
+        height: auto !important;
+    }
+    #inner.corporate.organization .content .value2>.inner {
+        padding-bottom: 100px;
+    }
+    #inner.corporate.organization .content .value2 .info {
+        opacity: 1;
+        margin-top: 0;
+    }
+    #inner.corporate.organization .content .value2.fixedend .info {
+        opacity: 1;
+    }
+    #inner.corporate.organization .content .value2 .body ol {}
+    #inner.corporate.organization .content .value2 .body ol li {
+        position: relative;
+        padding: 0px 0 0 0;
+    }
+    #inner.corporate.organization .content .value2 .body ol li+li {
+        margin-top: 35px;
+    }
+    #inner.corporate.organization .content .value2 .body ol li::before {
+        font-size: 50px;
+        content: "1";
+        font-weight: bold;
+        background-image: linear-gradient(90deg, #48E3FF 0%, #a8f2ff 33%, #a8f2ff 50%, #fff 50%, #fff 66%, transparent 66%, transparent 100%);
+        background-size: 420%;
+        background-position: 0% 0%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        height: 60px;
+        width: 35px;
+        line-height: 1em;
+    }
+    #inner.corporate.organization .content .value2 .body ol li:nth-child(2)::before {
+        content: "2";
+    }
+    #inner.corporate.organization .content .value2 .body ol li:nth-child(3)::before {
+        content: "3";
+    }
+    #inner.corporate.organization .content .value2 .body ol li .label {
+        font-size: 22px;
+        line-height: 1.3em;
+        padding-left: 43px;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .label span {
+        font-weight: 600;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .lead {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: inherit;
+        margin: 0;
+        padding-left: 43px;
+    }
+    #inner.corporate.organization .content .value2 .body ol li .text {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    #inner.corporate.organization .content .chart {
+        background: #1E1E1E;
+        border-radius: 0;
+        padding-bottom: 100px;
+        margin-bottom: -40px;
+    }
+    #inner.corporate.organization .content .chart>.inner {
+        display: block;
+        padding-bottom: 0;
+    }
+    #inner.corporate.organization .content .chart .body {
+        width: auto;
+        margin: 0 0 0 0;
+    }
+    #inner.corporate.organization .content .chart .body .img {
+        margin-top: 50px;
+    }
+    #inner.corporate.organization .content .chart .body .note {
+        color: #fff;
+        text-align: right;
+        margin-top: 18px;
+        font-size: 12px;
+        position: relative;
+        right: -0.7em;
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="_レイヤー_1" data-name="レイヤー_1">
+      <g id="_レイヤー_1-2" data-name="_レイヤー_1">
+        <g id="_レイヤー_2">
+          <g id="_レイヤー_2-2">
+            <g>
+              <circle class="cls-1" cx="17.6" cy="12.4" r="7.5"/>
+              <line class="cls-1" x1="12.3" y1="17.7" x2="4.8" y2="25.2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

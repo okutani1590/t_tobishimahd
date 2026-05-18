@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="canonical" href="https://www.tobishimahd.co.jp/english/contact/confirm/">
+
+<script type="text/javascript">
+if (screen.width >= 768) document.write('<meta name="viewport" content="width=1280"><meta name="format-detection" content="telephone=no">');
+else if (screen.width <= 374) document.write('<meta name="viewport" content="width=375"><meta name="format-detection" content="telephone=no">');
+else document.write('<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.5">');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="/english/favicon.ico">
+<link rel="apple-touch-icon" href="/english/apple-touch-icon.png">
+<link rel="stylesheet" href="/english/addcommon/css/modal-video.css" />
+<link rel="stylesheet" href="/english/addcommon/css/slick.css" />
+<link rel="stylesheet" href="/english/addcommon/css/slick-theme.css" />
+<link rel="stylesheet" href="/english/addcommon/css/remodal.css" />
+<link rel="stylesheet" href="/english/addcommon/css/remodal-default-theme.css" />
+<link rel="stylesheet" href="/english/addcommon/css/common.css?v=9" />
+<link rel="stylesheet" href="/english/addcommon/css/contact.css?v=3" />
+
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TOBISHIMA HOLDINGS" />
+<meta property="og:description" content="TOBISHIMA HOLDINGS - A platform company creating and developing the construction industry through innovation">
+<meta property="og:title" content="Confirmation - Contact Us - TOBISHIMA HOLDINGS">
+<meta property="og:url" content="https://www.tobishimahd.co.jp/english/contact/confirm/">
+<meta property="og:image" content="https://www.tobishimahd.co.jp/english/images/ogp.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="TOBISHIMA HOLDINGS - A platform company creating and developing the construction industry through innovation">
+	
+<meta name="description" content="TOBISHIMA HOLDINGS - A platform company creating and developing the construction industry through innovation">
+<title>Confirmation - Contact Us - TOBISHIMA HOLDINGS</title>
+
+	<script type="text/javascript">
+		<!--
+		// form submit
+		function back(frmObj) {
+			frmObj.submit();
+			return false;
+		}
+		// form action change & submit
+		function sendmail(frmObj) {
+			if (frmObj.elements['category'].value == 'Tobishima Holdings') {
+				frmObj.action = '/english/contact/sendmail_1';
+			} else if (frmObj.elements['category'].value == 'Tobishima Corporation' || frmObj.elements['category'].value == 'Other') {
+				frmObj.action = '/english/contact/sendmail_2';
+			} else {
+				return false;
+			}
+			frmObj.submit();
+			return false;
+		}
+		// -->
+	</script>
+</head>
+
+<body id="inner" class="contact confirm">
+<section id="top" class="outline">
+<header class="inc_english_header"><!-- /english/include/inc_header --></header>
+<div class="main">
+	<div class="wrap">
+		<div class="breadlist">
+			<div class="inner">
+				<a href="/english/">TOP</a> &gt; <span>Contact Us</span>			
+			</div>
+		</div>
+		<div class="visual">
+			<div class="inner">
+				<h1 class="label textstyle reverse scrollactive"><span>Contact Us</span></h1>
+			</div>
+		</div>
+		<div class="content">
+			<div class="formbox">
+				<div class="inner">
+					<p class="lead">May I transmit by the following contents?</p>
+					<form method="post" action="/english/contact/">
+						<dl class="formlist">
+							<dt class="required"><span>Category</span></dt>
+							<dd>
+								<p class="confirmtext category"></p>
+							</dd>
+							<dt class="required"><span>Subject</span></dt>
+							<dd>
+								<p class="confirmtext subject"></p>
+							</dd>
+							<dt><span>Company</span></dt>
+							<dd>
+								<p class="confirmtext company"></p>
+							</dd>
+							<dt><span>Department</span></dt>
+							<dd>
+								<p class="confirmtext department"></p>
+							</dd>
+							<dt class="required"><span>Name</span></dt>
+							<dd>
+								<p class="confirmtext name"></p>
+							</dd>
+							<dt><span>Telephone</span></dt>
+							<dd>
+								<p class="confirmtext tel"></p>
+							</dd>
+							<dt class="required"><span>E-mail Address</span></dt>
+							<dd>
+								<p class="confirmtext email"></p>
+							</dd>
+							<dt class="required"><span>Comments</span></dt>
+							<dd>
+								<p class="confirmtext question"></p>
+							</dd>
+						</dl>
+						<div class="submitbox">
+							<label class="submit" for="form-submit" title="Submit">
+								<input class="bgc2" id="form-submit" name="form-submit" type="submit" value="Submit" onclick="return sendmail(this.form);">
+							</label>
+							<label class="buck" for="form-back" title="Back">
+								<input class="bgc5" id="form-back" name="form-reset" type="button" value="Back" onclick="return back(this.form);">
+							</label>
+						</div>
+                        <input type="hidden" name="category" value="" />
+                        <input type="hidden" name="subject" value="" />
+                        <input type="hidden" name="name" value="" />
+                        <input type="hidden" name="tel" value="" />
+                        <input type="hidden" name="email" value="" />
+                        <input type="hidden" name="email_confirm" value="" />
+                        <input type="hidden" name="company" value="" />
+                        <input type="hidden" name="department" value="" />
+                        <input type="hidden" name="question" value="" />
+                        <input type="hidden" name="agreement" value="" />
+                        <input type="hidden" name="now" class="current_time" value="" />
+
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="group-company inc_english_group-company" id="group-company"><!-- /english/include/inc_group-company --></div>
+<footer class="inc_english_footer"><!-- /english/include/inc_footer --></footer>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/english/addcommon/js/slick.min.js"></script>
+<script src="/english/addcommon/js/remodal.js"></script>
+<script src="/english/addcommon/js/common.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,2555 @@
+@charset "UTF-8";
+
+#inner .main .wrap::before {
+    transform: translate(-50%, -50%) rotate(70deg);
+    top: 50%;
+    display: none;
+}
+#inner.sustainability header .gmenu .box a {
+    color: #fff;
+}
+#inner.sustainability header.show .gmenu .box a {
+    color: #000;
+}
+#inner.sustainability header .gmenu .box.search .icon img {
+    opacity: 1;
+}
+#inner.sustainability header .gmenu .box.search .icon img+img {
+    opacity: 0;
+}
+#inner.sustainability header.show .gmenu .box.search .icon img {
+    opacity: 0;
+}
+#inner.sustainability header.show .gmenu .box.search .icon img+img {
+    opacity: 1;
+}
+#inner.sustainability .main .wrap>.bg {
+    background: url(../../images/sustainability/img_visual.webp) no-repeat center bottom / cover;
+}
+#inner.sustainability .main .wrap>.bg::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+	opacity: 0.2;
+}
+#inner.sustainability.group-sustainability .main .wrap>.bg::before,
+#inner.sustainability.policy-guideline .main .wrap>.bg::before,
+#inner.sustainability.business_strategy .main .wrap>.bg::before {
+	opacity: 0.6;
+}
+#inner.sustainability.group-sustainability .main .wrap>.bg {
+    background: url(../../images/sustainability/group-sustainability/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.policy-guideline .main .wrap>.bg {
+    background: url(../../images/sustainability/policy-guideline/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.value_creation_process .main .wrap>.bg {
+    background: url(../../images/sustainability/value_creation_process/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.business_strategy .main .wrap>.bg {
+    background: url(../../images/sustainability/business_strategy/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.environmental_initiatives .main .wrap>.bg {
+    background: url(../../images/sustainability/environmental_initiatives/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.climate_change_response .main .wrap>.bg {
+    background: url(../../images/sustainability/climate_change_response/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.human_capital_management .main .wrap>.bg {
+    background: url(../../images/sustainability/human_capital_management/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.commitment_to_human_rights .main .wrap>.bg {
+    background: url(../../images/sustainability/commitment_to_human_rights/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.corporate_governance .main .wrap>.bg {
+    background: url(../../images/sustainability/corporate_governance/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.risk_management .main .wrap>.bg {
+    background: url(../../images/sustainability/risk_management/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability.compliance .main .wrap>.bg {
+    background: url(../../images/sustainability/compliance/img_visual.webp) no-repeat center center / cover;
+    height: 500px;
+}
+#inner.sustainability .visual {
+    margin-bottom: 420px;
+}
+#inner.sustainability.group-sustainability .visual,
+#inner.sustainability.document .visual {
+    margin-bottom: 200px;
+}
+#inner.sustainability .breadlist,
+#inner.sustainability .breadlist a {
+    color: #fff;
+}
+#inner.sustainability .visual h1 {
+    color: #fff;
+}
+.content {
+    padding-top: 30px;
+    min-height: 0;
+}
+#inner.sustainability .main .wrap {
+    background: #fff;
+}
+#inner.sustainability .content {
+    background: #fff;
+    padding-bottom: 0;
+}
+.content .sec {
+    margin: -130px 0 0 0;
+    background: #ededed;
+    border-radius: 100px 100px 0 0;
+    padding: 200px 0 300px 0;
+    position: relative;
+}
+.content .maincontent {padding-top: 120px;}
+.content .maincontent > .inner {
+}
+.content .maincontent > .inner > .title {font-size: 25px;font-weight: bold;}
+.content .maincontent > .inner > .title span {letter-spacing: 0.05em;}
+.content .maincontent > .inner > .text {font-size: 15px;margin: 23px 0 65px 0;}
+.content .environment,
+.content .social,
+.content .governance,
+.content .construction,
+.content .growth,
+.content .innovation {
+    margin: -130px 0 0 0;
+    background: #ededed;
+    border-radius: 100px 100px 0 0;
+    padding: 200px 0 300px 0;
+    position: relative;
+}
+.content .environment::before,
+.content .social::before,
+.content .governance::before,
+.content .construction::before,
+.content .growth::before,
+.content .innovation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 476px;
+    background: url(../../images/sustainability/bg_environment.webp) no-repeat center center / cover;
+    border-radius: 100px 100px 0 0;
+}
+.content .social::before {
+    background-image: url(../../images/sustainability/bg_social.webp);
+}
+.content .governance::before {
+    background-image: url(../../images/sustainability/bg_governance.webp);
+}
+.content .construction::before {
+    background-image: url(../../images/sustainability/business_strategy/bg_construction.webp);
+}
+.content .growth::before {
+    background-image: url(../../images/sustainability/business_strategy/bg_growth.webp);
+}
+.content .innovation::before {
+    background-image: url(../../images/sustainability/business_strategy/bg_innovation.webp);
+}
+.content .sec:last-child {
+    margin-bottom: -150px;
+}
+.content .sec>.inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+.content .sec>.inner>.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+}
+.content .sec .info h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .sec .info h2 span {}
+.content .sec>.inner>.info .label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.content .sec .linkstyle {}
+.content .sec .noimage .linkstyle {
+	background: #f2f2f2;
+	border-radius: 20px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px 15px 30px;
+	box-sizing: border-box;
+}
+.content .sec .noimage .linkstyle::after {right: 10px;bottom: 10px;}
+.content .sec .noimage .linkstyle[rel="anchor"] {
+  background: no-repeat;
+  padding: 0 2rem 3px ;
+  height: 100px;
+  background: white;
+  }
+.content .sec .noimage .linkstyle[rel="anchor"] .info {
+	margin-top: 0;
+}
+.content .sec .noimage .linkstyle[rel="anchor"]::after {bottom: 21px;right: 5px;}
+.content .sec .linkstyle .img img {
+    height: auto;
+}
+.content .sec .linkstyle .info {
+    margin-top: 11px;
+}
+.content .sec .linkstyle .info .label {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sustainability.document .sec {
+	padding-top: 120px;
+}
+.sustainability.document .index {
+  margin-bottom: 120px;
+}
+.sustainability.document .index > .inner {
+	background: #fff;
+	border-radius: 25px;
+	padding: 50px 45px;
+	max-width: 1000px;
+}
+.sustainability.document .index table {
+	width: 100%;
+	line-height: 1.8em;
+	font-size: 13px;
+}
+.sustainability.document .index table tbody {
+	
+}
+.sustainability.document .index table tr {
+	
+}
+.sustainability.document .index table tr th {
+	background: linear-gradient(90deg, #48E3FF 0%,  #005FC0 100%);
+	color: #fff;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 30px;
+	border: 5px solid #fff;
+	width: 50%;
+	box-sizing: border-box;
+}
+.sustainability.document .index table tr td {
+	background: #ededed;
+	border: 5px solid #fff;
+	padding: 5px 0px 5px 30px;
+	font-weight: 500;
+	vertical-align: middle;
+}
+.sustainability.document .index table tr td.w1 {width: 20%;}
+.sustainability.document .index table tr td.w2 {width: 30%;}
+.sustainability.document .index table tr td a {
+	font-weight: 500;
+	display: block;
+	position: relative;
+}
+.sustainability.document .index table tr td a::after {
+	display: block;
+	top: 50%;
+	right: 12px;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #0b5287;
+	border-width: 7px;
+	margin-top: -4px;
+}
+.sustainability.document .index table tr td a.nolink {
+	pointer-events: none;
+}
+.sustainability.document .index table tr td a.nolink::after {
+	display: none;
+}
+.sustainability.document .index table tr td a.link::after {
+	background: url(/images/icons/icon_link.svg) no-repeat center center / contain;
+	border: none;
+	width: 18px;
+	height: 20px;
+	margin: 0;
+	transform: translate(0, -50%);
+	right: 10px;
+}
+.sustainability.document .index table tr td a.pdf::after {
+	background: url(/images/icons/icon_pdf.svg) no-repeat center center / contain;
+	border: none;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	transform: translate(0, -50%);
+	right: 4px;
+}
+.sustainability.document .insec {
+	margin-top: 65px;
+}
+.sustainability.document .insec:nth-child(1) {
+	margin-top: 0px;
+}
+.sustainability.document .insec > .inner {max-width: 1000px;}
+
+
+/** H Style ***/
+.sustainability.document .insec .hstyle1 {
+	display: flex;
+	margin-bottom: 22px;
+}
+.sustainability.document .insec .hstyle1 span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+  background-size: 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  line-height: 1.5em;
+}
+.sustainability.document .insec .hstyle1 span::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1.5px;
+	width: 100%;
+	background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+}
+.sustainability.document .insec .hstyle1 span sup {font-size: 15px;margin: 0px 2px 5px 1px;line-height: 1em;display: inline-block;writing-mode: vertical-rl;}
+.sustainability.document .insec .hstyle2 {
+	margin-bottom: 16px;
+	position: relative;
+	padding-left: 28px;
+}
+.sustainability.document .insec .hstyle2::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+	border-radius: 100px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+.sustainability.document .insec .hstyle2 > span:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+  line-height: 1.5em;
+  margin-right: 20px;
+}
+.sustainability.document .insec .hstyle2 > span:nth-child(1) sup {font-size: 12px;position: relative;top: -7px;font-weight: bold;}
+.labelstyle1 {
+	display: block;
+	border-radius: 100px;
+	text-align: center;
+	background: #ededed;
+	border-radius: 100px;
+	position: relative;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0;
+	display: inline-block;
+	top: -1px;
+}
+.labelstyle1::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(90deg, #45ddfc, #0260c5);
+  z-index: 0;
+  border-radius: 50px;
+}
+.labelstyle1 span {
+	display: block;
+	border-radius: 100px;
+	text-align: center;
+	background: #ededed;
+	border-radius: 100px;
+	position: relative;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 2px 20px;
+	margin: 0;
+}
+
+
+.sustainability.document .insec .text {
+	font-size: 13px;
+	line-height: 1.8em;
+	font-weight: 500;
+	letter-spacing: 0;
+}
+.sustainability.document .insec .note {
+	font-size: 10px;
+	line-height: 1.8em;
+	font-weight: 500;
+}
+.sustainability.document .insec .text + .note {
+	margin-top: 10px;
+}
+.sustainability.document .insec ol.list1,
+.sustainability.document .insec ol.list3{
+	margin-top: 20px;
+}
+.sustainability.document .insec ol.list1 li + li,
+.sustainability.document .insec ol.list3 li + li {
+	margin-top: 20px;
+}
+.sustainability.document .insec ol.list1 li .title,
+.sustainability.document .insec ol.list3 li .title {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.sustainability.document .insec ol.list1 li .title span {
+	display: block;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+	position: relative;
+	line-height: 1.5em;
+	width: 27px;
+}
+.sustainability.document .insec ol.list2 {
+	margin-top: 20px;
+}
+.sustainability.document .insec ol.list2 li {
+	font-size: 13px;
+	line-height: 1.8em;
+	font-weight: 500;
+	padding-left: 25px;
+	position: relative;
+}
+.sustainability.document .insec ol.list2 li + li {
+	margin-top: 18px;
+}
+.sustainability.document .insec ol.list2 li span {
+	width: 25px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sustainability.document .insec section {
+	margin-top: 20px;
+}
+.sustainability.document .insec section h3 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.sustainability.document .insec ul.list1 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px 26px;
+	margin-top: 40px;
+}
+.sustainability.document .insec ul.list1 li {
+	  width: 40%;
+	  position: relative;
+}
+.sustainability.document .insec ul.list1 li span {
+	display: block;
+	border-radius: 100px;
+	text-align: center;
+	padding: 16px 0;
+	background: white;
+	border-radius: 100px;
+	position: relative;
+	font-weight: bold;
+	font-size: 15px;
+	border: 1.8px solid #24A1E0;
+}
+
+.sustainability.document .insec ul.list1 li::before {
+  /* content: ""; */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(90deg, #45ddfc, #0260c5);
+  z-index: 0;
+  border-radius: 50px;
+}
+
+
+
+.sustainability.document .insec .frame {
+	background: #fff;
+	border-radius: 20px;
+	padding: 50px 45px;
+	max-width: 1000px;
+	margin-top: 30px;
+}
+.sustainability.document .insec .frame .title {display: flex;align-items: center;font-size: 20px;font-weight: bold;margin-bottom: 21px;}
+.sustainability.document .insec .frame .title span {
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	font-size: 25px;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	line-height: 1.5em;
+	margin-right: 15px;
+}
+.sustainability.document .insec .frame .note {
+	font-size: 11px;
+	margin-top: 22px;
+}
+.sustainability.document .insec .bt_more {
+	font-size: 13px;
+	line-height: 1.6em;
+	font-weight: 500;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+	width: 360px;
+	padding: 8px 0;
+}
+.sustainability.document .insec .bt_more::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1.5px;
+	width: 100%;
+	background: linear-gradient(90deg, #d0d0d0 0%, #7b7b7b 100%);
+}
+.sustainability.document .insec .bt_more::after {
+	opacity: 1;
+	bottom: 0;
+}
+
+/*******************************************/
+/* Environmental Initiatives */
+/*******************************************/
+.sustainability.document.environmental_initiatives .insec section {
+	margin-top: 36px;
+}
+.sustainability.document.environmental_initiatives .insec .fbox {
+	display: flex;
+	justify-content: space-between;
+}
+.sustainability.document.environmental_initiatives .insec .fbox .text {
+	width: 44%;
+}
+.sustainability.document.environmental_initiatives .insec .fbox .img {
+	width: 50%;
+}
+.sustainability.document.environmental_initiatives .insec .fbox .img img {border-radius: 15px;}
+.sustainability.document.environmental_initiatives .insec .fbox .img .caption {
+	text-align: right;
+	font-size: 11px;
+	margin-top: 9px;
+}
+
+/*******************************************/
+/* Value Creation Process */
+/*******************************************/
+.sustainability.document.commitment_to_human_rights .insec .frame img {
+  width: 78%;
+  margin: 0 auto;
+}
+.sustainability.document.commitment_to_human_rights .insec .fbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+.sustainability.document.commitment_to_human_rights .insec .fbox .info {
+	width: 44%;
+}
+.sustainability.document.commitment_to_human_rights .insec .fbox .info section:nth-child(1) {margin-top: 0;}
+.sustainability.document.commitment_to_human_rights .insec .fbox .info h3 {
+	margin-bottom: 8px;
+}
+.sustainability.document.commitment_to_human_rights .insec .fbox .img {
+	width: 40%;
+}
+.sustainability.document.commitment_to_human_rights .insec .fbox .img img {border-radius: 15px;}
+
+/*******************************************/
+/* Risk Management */
+/*******************************************/
+.sustainability.document.risk_management .insec .fbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+.sustainability.document.risk_management .insec .fbox section {
+	width: 47%;
+}
+.sustainability.document.risk_management .insec .fbox section:nth-child(1),
+.sustainability.document.risk_management .insec .fbox section:nth-child(2) {
+	margin-top: 0;
+}
+.sustainability.document.risk_management .insec .fbox + .text {
+	margin-top: 40px;
+}
+
+/*******************************************/
+/* Corporate Governance */
+/*******************************************/
+.sustainability.document.corporate_governance .insec#sec3 .frame img {
+  width: 82%;
+  margin: 0 auto;
+}
+
+/*******************************************/
+/* Human Capital Management */
+/*******************************************/
+.sustainability.document.human_capital_management .insec .hwrap {
+	display: flex;
+	align-items: start;
+}
+.sustainability.document.human_capital_management .insec .hwrap .labelstyle1 {
+	margin: 7px 0 0 20px;
+}
+.sustainability.document.human_capital_management .insec#sec1 .frame img {
+  width: 94%;
+  margin: 0 auto;
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox {
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox section {
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #47e2ff, #0460c1);
+  border-image-slice: 1;
+  width: 47%;
+  box-sizing: border-box;
+  padding: 0 0 0 25px;
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox section h3 {
+	position: relative;
+	top: -12px;
+	left: -25px;
+	margin-bottom: 10px;
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox section .text {
+	
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox section .img {
+	margin-top: 30px;
+}
+.sustainability.document.human_capital_management .insec#sec2 .fbox section .img img {
+	border-radius: 15px;
+}
+.sustainability.document.human_capital_management .insec#sec3 section {
+	margin-top: 30px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox {
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section {
+	width: 47%;
+	margin: 0;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section h4 {
+	background: linear-gradient(90deg, #222429 0%, #7d8087 100%);
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	width: 270px;
+	padding: 7px 0;
+	margin-bottom: 24px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section ol {
+	margin-top: 24px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li + li {
+	margin-top: 27px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .title {
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	padding-left: 26px;
+	margin-bottom: 10px;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .title .num {
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .text {
+	
+}
+
+/*******************************************/
+/* Climate Change Response */
+/*******************************************/
+.sustainability.document.climate_change_response .insec#sec2 .frame img {
+  width: 78%;
+  margin: 0 auto;
+}
+.sustainability.document.climate_change_response .insec#sec3 .fbox {
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .text {
+  width: 47%;
+}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail {
+  background: #fff;
+  width: 47%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .title {color: #fff;background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);font-weight: 500;font-size: 15px;padding: 13px 20px;}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info {padding: 13px 20px;}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text {font-size: 13px;width: auto;letter-spacing: 0;}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text + .text {margin-top: 13px;}
+.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text span {display: block;font-weight: bold;}
+.sustainability.document.climate_change_response .insec#sec3 .frame + .note {
+	margin-top: 20px;
+}
+
+.sustainability.document.climate_change_response .insec#sec5 .fbox {
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.sustainability.document.climate_change_response .insec#sec5 .fbox .info {
+  width: 47%;
+}
+.sustainability.document.climate_change_response .insec#sec5 .fbox .info .text {background: url(../../images/sustainability/climate_change_response/img_logo_sbt.webp) no-repeat center right / 99px auto;padding: 10px 110px 10px 0;}
+.sustainability.document.climate_change_response .insec#sec5 .fbox .frame {
+  width: 47%;
+  box-sizing: border-box;
+  margin: 0;
+}
+.sustainability.document.climate_change_response .insec#sec5 .fbox + .note {
+	margin-top: 20px;
+}
+.sustainability.document.climate_change_response .insec#sec6 section {
+	margin-top: 40px;
+}
+.sustainability.document.climate_change_response .insec#sec6 section .frame {margin-top: 20px;}
+
+/*******************************************/
+/* Business Strategy */
+/*******************************************/
+.sustainability.document.business_strategy .sec.maincontent {
+	padding-bottom: 240px;
+}
+.sustainability.document.business_strategy .content .sec.construction>.inner>.info,
+.sustainability.document.business_strategy .content .sec.growth>.inner>.info,
+.sustainability.document.business_strategy .content .sec.innovation>.inner>.info {
+	padding: 74px 0 180px 0;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 > .inner > section {
+	margin-top: 40px;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .frame img {
+  width: 83%;
+  margin: 0 auto;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox {
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section {
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #47e2ff, #0460c1);
+  border-image-slice: 1;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section h5 {
+	position: relative;
+	top: -12px;
+	left: -20px;
+	margin-bottom: 10px;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section h5 > span {width: 110px;}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risk h5 span::before {
+	background: linear-gradient(90deg, #d0d0d0 0%, #7b7b7b 100%);
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risk {
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #d0d0d0, #7b7b7b);
+  border-image-slice: 1;
+  width: 45%;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section .text {letter-spacing: 0;}
+.secstyle1 {
+	margin-top: 40px !important;
+}
+.secstyle1 h4 {font-size: 20px;font-weight: bold;width: 100%;margin-bottom: 24px;}
+.secstyle1 .fbox {
+	justify-content: space-between;
+}
+.secstyle1 .fbox .info {
+	width: 45%;
+}
+.secstyle1 .fbox .info .title {
+	font-size: 15px;
+	font-weight: bold;
+}
+.secstyle1 .fbox .info .title sup {display: inline-block;position: relative;top: -4px;font-size: 10px;font-weight: bold;}
+.secstyle1 .fbox .info .text {
+	margin-top: 10px;
+}
+.secstyle1 .fbox .info .text strong {
+	font-weight: bold;
+}
+.secstyle1 .fbox .info .text .note {
+	
+}
+.secstyle1 .fbox .img {
+	width: 50%;
+}
+.secstyle1 .fbox .img img {
+	border-radius: 15px;
+}
+.secstyle1 .fbox .img .caption {
+	text-align: right;
+	font-size: 11px;
+	margin-top: 9px;
+}
+.sustainability.document.business_strategy .insec#construction_sec2 .secstyle1 .img {margin-top: -50px;}
+
+.sustainability.document.business_strategy .insec#growth_sec2 .frame img {
+  width: 74%;
+  margin: 0 auto;
+}
+
+
+.secstyle2 {
+	flex-wrap: wrap;
+	gap: 50px 30px;
+	margin-top: 45px;
+}
+.secstyle2 .box {
+	width: calc((100% - 60px) / 3);
+}
+.secstyle2 .img {
+}
+.secstyle2 .img img {
+	border-radius: 15px;
+}
+.secstyle2 .info {
+	margin-top: 20px;
+}
+.secstyle2 .info .title {
+	font-size: 15px;
+	font-weight: bold;
+}
+.secstyle2 .info .title sup {display: inline-block;position: relative;top: -4px;font-size: 10px;font-weight: bold;}
+.secstyle2 .info .text {
+	margin-top: 10px;
+	line-height: 1.6em;
+}
+.secstyle2 .info .text strong {
+	font-weight: bold;
+}
+.secstyle2 .info .label {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 12px;
+}
+.secstyle2 .info .label span {
+	display: block;
+	font-size: 13px;
+	background: #67c750;
+	border-radius: 100px;
+	padding: 1px 18px 0 18px;
+	color: #000;
+}
+.secstyle2 .info .label span.c2 {background: #48e3ff; }
+.secstyle2 .info .label span.c3 {background: #af6448; color: #fff; }
+.secstyle2 .info .label span.c4 {background: #486e7f; color: #fff; }
+.secstyle2 .info .label span.c5 {background: #c8c8c8; }
+.secstyle2 .info .label span.c6 {background: #ff97ff; }
+.secstyle2 .info .label span.c7 {background: #4800ff; color: #fff; }
+
+.sustainability.document.business_strategy .insec#innovation_sec1 .frame img {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap {
+	display: flex;
+	align-items: start;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap h3 {
+	margin-bottom: 0;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap .labelstyle1 {
+	margin: 7px 0 0 20px;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap .labelstyle1 + .labelstyle1 {
+	margin-left: 10px;
+}
+
+.sustainability.document.business_strategy .insec#innovation_sec3 ol {
+	margin-top: 24px;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 ol li + li {
+	margin-top: 15px;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text {
+	font-size: 13px;
+	position: relative;
+	padding-left: 26px;
+	margin-bottom: 0;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text .num {
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-weight: bold;
+}
+.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text {
+	
+}
+.sustainability.document .insec ol.list3 li .title span {
+	display: inline-block;
+	font-weight: 600;
+	position: relative;
+	line-height: 1.5em;
+	width: 27px;
+}
+
+@media screen and (max-width: 767px) {
+    #inner.sustainability header .bt_menu span {
+        color: #fff;
+    }
+    #inner.sustainability header .bt_menu::before,
+    #inner.sustainability header .bt_menu::after {
+        background: #fff;
+    }
+    #inner.sustainability header.show .bt_menu span {
+        color: #000;
+    }
+    #inner.sustainability header.show .bt_menu::before,
+    #inner.sustainability header.show .bt_menu::after {
+        background: #000;
+    }
+    #inner.sustainability header.open .bt_menu span {
+        color: #fff;
+    }
+    #inner.sustainability header.open .bt_menu::before,
+    #inner.sustainability header.open .bt_menu::after {
+        background: #fff;
+    }
+    #inner.sustainability .main .wrap::before {
+        transform: translate(-50%, -50%) rotate(80deg);
+        top: 700px;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        display: none;
+    }
+    .content {
+        padding-top: 20px;
+    }
+    #inner.sustainability header .gmenu .box a {
+        color: #fff;
+    }
+    #inner.sustainability header.show .gmenu .box a {
+        color: #000;
+    }
+    #inner.sustainability header .gmenu .box.search .icon img {
+        opacity: 1;
+    }
+    #inner.sustainability header .gmenu .box.search .icon img+img {
+        opacity: 0;
+    }
+    #inner.sustainability header.show .gmenu .box.search .icon img {
+        opacity: 0;
+    }
+    #inner.sustainability header.show .gmenu .box.search .icon img+img {
+        opacity: 1;
+    }
+    #inner.sustainability .main .wrap>.bg {
+        background: url(../../images/sustainability/img_visual.webp) no-repeat center bottom / cover;
+        height: 330px;
+    }
+	#inner.sustainability .main .wrap>.bg::before {
+		width: 100%;
+		height: 100px;
+	}
+	#inner.sustainability.group-sustainability .main .wrap>.bg {
+		background: url(../../images/sustainability/group-sustainability/img_visual.webp) no-repeat center center / cover;
+		height: 380px;
+	}
+	#inner.sustainability.value_creation_process .main .wrap>.bg {
+	    background: url(../../images/sustainability/value_creation_process/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.business_strategy .main .wrap>.bg {
+	    background: url(../../images/sustainability/business_strategy/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.environmental_initiatives .main .wrap>.bg {
+	    background: url(../../images/sustainability/environmental_initiatives/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.climate_change_response .main .wrap>.bg {
+	    background: url(../../images/sustainability/climate_change_response/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.human_capital_management .main .wrap>.bg {
+	    background: url(../../images/sustainability/human_capital_management/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.commitment_to_human_rights .main .wrap>.bg {
+	    background: url(../../images/sustainability/commitment_to_human_rights/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.corporate_governance .main .wrap>.bg {
+	    background: url(../../images/sustainability/corporate_governance/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.risk_management .main .wrap>.bg {
+	    background: url(../../images/sustainability/risk_management/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.compliance .main .wrap>.bg {
+	    background: url(../../images/sustainability/compliance/img_visual.webp) no-repeat center center / cover;
+	    height: 380px;
+	}
+	#inner.sustainability.policy-guideline .main .wrap>.bg {
+		height: 380px;
+		background-position: 55% 50%;
+	}
+	#inner.sustainability.policy-guideline .main .wrap>.bg::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: #00283b;
+		opacity: 0.8;
+	}
+    #inner.sustainability .visual {
+        margin-bottom: 104px;
+    }
+    #inner.sustainability.group-sustainability .visual,
+    #inner.sustainability.document .visual {
+        margin-bottom: 104px;
+    }
+    #inner.sustainability .breadlist,
+    #inner.sustainability .breadlist a {
+        color: #fff;
+    }
+    #inner.sustainability .visual h1 {
+        color: #fff;
+    }
+    .content .sec {
+        margin: -40px 0 0 0;
+        background: #ededed;
+        border-radius: 40px 40px 0 0;
+        padding: 100px 0 100px 0;
+        position: relative;
+    }
+	.content .maincontent {padding-top: 60px;}
+	.content .maincontent > .inner {
+	}
+	.content .maincontent > .inner > .title {font-size: 20px;font-weight: bold;}
+	.content .maincontent > .inner > .title span {letter-spacing: 0.05em;}
+	.content .maincontent > .inner > .text {font-size: 13px;margin: 16px 0 40px 0;}
+	.content .environment,
+	.content .social,
+	.content .governance,
+	.content .construction,
+	.content .growth,
+	.content .innovation{
+		margin: -40px 0 0 0;
+		background: #ededed;
+		border-radius: 40px 40px 0 0;
+		padding: 100px 0 100px 0;
+		position: relative;
+	}
+	.content .environment::before,
+	.content .social::before,
+	.content .governance::before,
+	.content .construction::before,
+	.content .growth::before,
+	.content .innovation::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 276px;
+	    background: url(../../images/sustainability/bg_environment.webp) no-repeat center center / cover;
+        border-radius: 40px 40px 0 0;
+	}
+	.content .social::before {
+	    background-image: url(../../images/sustainability/bg_social.webp);
+	}
+	.content .governance::before {
+	    background-image: url(../../images/sustainability/bg_governance.webp);
+	}
+	.content .construction::before {
+	    background-image: url(../../images/sustainability/business_strategy/bg_construction.webp);
+	    height: 216px;
+	}
+	.content .growth::before {
+	    background-image: url(../../images/sustainability/business_strategy/bg_growth.webp);
+	    height: 216px;
+	}
+	.content .innovation::before {
+	    background-image: url(../../images/sustainability/business_strategy/bg_innovation.webp);
+	    height: 216px;
+	}
+    .content .sec:nth-child(1) {
+        margin-top: -60px;
+    }
+    .content .sec:last-child {
+        margin-bottom: -40px;
+    }
+    .content .sec>.inner {
+        width: 88%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content .sec>.inner>.info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 68px;
+    }
+    .content .sec .info h2 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .content .sec .info h2 span {}
+    .content .sec>.inner>.info .label {
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 5px;
+    }
+    .content .sec .linkstyle {}
+	.content .sec .noimage {
+		gap: 15px;
+		/* flex-direction: row; */
+	}
+	.content .sec .noimage .linkstyle {
+		background: #f2f2f2;
+		border-radius: 12px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		padding: 4px 15px 15px 15px;
+		box-sizing: border-box;
+	}
+	.content .sec .noimage .linkstyle::after {right: 10px;bottom: 10px;}
+	.content .sec .noimage .linkstyle[rel="anchor"] {
+	  background: no-repeat;
+	  padding: 5px 2rem 3px ;
+	  height: 64px;
+	  background: white;
+	  }
+	.content .sec .noimage .linkstyle[rel="anchor"] .info {
+		margin-top: 0;
+	}
+	.content .sec .noimage .linkstyle[rel="anchor"]::after {bottom: 6px;right: 5px;}
+    .content .sec .linkstyle .img img {
+        height: auto;
+    }
+    .content .sec .linkstyle .info {
+        margin-top: 11px;
+    }
+    .content .sec .linkstyle .info .label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .content .sec .linkstyle .info .title {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+	.sustainability.document .sec {
+		padding-top: 60px;
+	}
+	.sustainability.document .index {
+	  margin-bottom: 70px;
+	}
+	.sustainability.document .index > .inner {
+		background: #fff;
+		border-radius: 24px;
+		padding: 40px 0px;
+		max-width: 1000px;
+		overflow: scroll;
+	}
+	.sustainability.document .index table {
+		width: 500px;
+		line-height: 1.8em;
+		font-size: 12px;
+		margin: 0 20px;
+	}
+	.sustainability.document .index table tbody {
+		
+	}
+	.sustainability.document .index table tr {
+		
+	}
+	.sustainability.document .index table tr th {
+		background: linear-gradient(90deg, #48E3FF 0%,  #005FC0 100%);
+		color: #fff;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 3px 20px;
+		border: 5px solid #fff;
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.sustainability.document .index table tr td {
+		background: #ededed;
+		border: 5px solid #fff;
+		padding: 3px 0px 3px 10px;
+		font-weight: 500;
+		vertical-align: middle;
+	}
+	.sustainability.document .index table tr td.w1 {width: 20%;}
+	.sustainability.document .index table tr td.w2 {width: 30%;}
+	.sustainability.document .index table tr td a {
+		font-weight: 500;
+		display: block;
+		position: relative;
+		padding-right: 24px;
+	}
+	.sustainability.document .index table tr td a::after {
+		display: block;
+		top: 50%;
+		right: 12px;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: #0b5287;
+		border-width: 7px;
+		margin-top: -4px;
+	}
+	.sustainability.document .index table tr td a.nolink {
+		pointer-events: none;
+	}
+	.sustainability.document .index table tr td a.nolink::after {
+		display: none;
+	}
+	.sustainability.document .index table tr td a.link::after {
+		background: url(/images/icons/icon_link.svg) no-repeat center center / contain;
+		border: none;
+		width: 18px;
+		height: 20px;
+		margin: 0;
+		transform: translate(0, -50%);
+		right: 10px;
+	}
+	.sustainability.document .index table tr td a.pdf::after {
+		width: 26px;
+		right: 6px;
+	}
+	.sustainability.document .insec {
+		margin-top: 40px;
+	}
+	.sustainability.document .insec > .inner {max-width: 1000px;}
+	
+	/** H Style ***/
+	.sustainability.document .insec .hstyle1 {
+		display: flex;
+		margin-bottom: 16px;
+	}
+	.sustainability.document .insec .hstyle1 span {
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  color: transparent;
+	  background-image: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+	  background-size: 100%;
+	  background-position: 0% 0%;
+	  background-repeat: no-repeat;
+	  font-size: 18px;
+	  font-weight: bold;
+	  display: block;
+	  position: relative;
+	  line-height: 1.3em;
+	  padding: 5px 0;
+	}
+	.sustainability.document .insec .hstyle1 span sup {font-size: 13px;margin: 0px 2px 2px 1px;line-height: 1em;display: inline-block;writing-mode: vertical-rl;font-weight: bold;}
+	.sustainability.document .insec .hstyle1 span::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1.5px;
+		width: 100%;
+		background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+	}
+	.sustainability.document .insec .hstyle2 {
+		margin-bottom: 15px;
+		padding-left: 24px;
+	}
+	.sustainability.document .insec .hstyle2::before {
+		content: "";
+		display: block;
+		width: 15px;
+		height: 15px;
+		background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+		border-radius: 100px;
+		top: 4px;
+	}
+	.sustainability.document .insec .hstyle2 > span:nth-child(1) {
+	  font-size: 15px;
+	  font-weight: bold;
+	  position: relative;
+	  line-height: 1.5em;
+	  margin-right: 10px;
+	}
+	.sustainability.document .insec .hstyle2 > span:nth-child(1) sup {font-size: 12px;position: relative;top: -7px;font-weight: bold;}
+	.labelstyle1 {
+		display: block;
+		border-radius: 100px;
+		text-align: center;
+		background: #ededed;
+		border-radius: 100px;
+		position: relative;
+		font-weight: bold;
+		font-size: 15px;
+		margin: 0;
+		display: inline-block;
+		top: -1px;
+	}
+	.labelstyle1::before {
+	  content: "";
+	  position: absolute;
+	  top: -2px;
+	  left: -2px;
+	  width: calc(100% + 4px);
+	  height: calc(100% + 4px);
+	  background: linear-gradient(90deg, #45ddfc, #0260c5);
+	  z-index: 0;
+	  border-radius: 50px;
+	}
+	.labelstyle1 span {
+		display: block;
+		border-radius: 100px;
+		text-align: center;
+		background: white;
+		border-radius: 100px;
+		position: relative;
+		font-weight: bold;
+		font-size: 11px;
+		padding: 1px 16px;
+		margin: 0;
+	}
+	.sustainability.document .insec .text {
+		font-size: 12px;
+		line-height: 1.8em;
+		font-weight: 500;
+	}
+	.sustainability.document .insec ol.list1 {
+		margin-top: 15px;
+	}
+	.sustainability.document .insec ol.list1 li + li,
+	.sustainability.document .insec ol.list3 li + li {
+		margin-top: 15px;
+	}
+	.sustainability.document .insec ol.list1 li .title {
+		display: flex;
+		align-items: center;
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+	.sustainability.document .insec ol.list1 li .title span {
+		display: block;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+		background-size: 100%;
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		font-size: 20px;
+		font-weight: 600;
+		display: block;
+		position: relative;
+		line-height: 1.5em;
+		width: 27px;
+	}
+	.sustainability.document .insec ol.list2 {
+		margin-top: 15px;
+	}
+	.sustainability.document .insec ol.list2 li {
+		font-size: 13px;
+		line-height: 1.8em;
+		font-weight: 500;
+		padding-left: 25px;
+		position: relative;
+	}
+	.sustainability.document .insec ol.list2 li + li {
+		margin-top: 12px;
+	}
+	.sustainability.document .insec ol.list2 li span {
+		width: 25px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.sustainability.document .insec section {
+		margin-top: 20px;
+	}
+	.sustainability.document .insec section h3 {
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+	.sustainability.document .insec ul.list1 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px 26px;
+		margin-top: 30px;
+	}
+	.sustainability.document .insec ul.list1 li {
+		  width: 100%;
+		  position: relative;
+	}
+	.sustainability.document .insec ul.list1 li span {
+		display: block;
+		border-radius: 100px;
+		text-align: center;
+		padding: 13px 0;
+		background: white;
+		border-radius: 100px;
+		position: relative;
+		font-weight: bold;
+		font-size: 13px;
+	}
+	
+	.sustainability.document .insec ul.list1 li::before {
+	  /* content: ""; */
+	  position: absolute;
+	  top: -2px;
+	  left: -2px;
+	  width: calc(100% + 4px);
+	  height: calc(100% + 4px);
+	  background: linear-gradient(90deg, #45ddfc, #0260c5);
+	  z-index: 0;
+	  border-radius: 50px;
+	}
+	
+	.sustainability.document .insec .frame {
+		background: #fff;
+		border-radius: 15px;
+		padding: 25px 0;
+		max-width: 1000px;
+		margin-top: 20px;
+	}
+	.sustainability.document .insec .frame .title {display: flex;align-items: center;font-size: 14px;font-weight: bold;margin: 0 0 0px 20px;}
+	.sustainability.document .insec .frame .title span {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+		background-size: 100%;
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		font-size: 20px;
+		font-weight: bold;
+		display: block;
+		position: relative;
+		line-height: 1.5em;
+		margin-right: 12px;
+	}
+	.sustainability.document .insec .frame .note {
+		font-size: 10px;
+		margin: 10px 20px 0 20px;
+	}
+	.sustainability.document .insec .frame .img {
+		overflow: scroll;
+		padding: 10px 0;
+	}
+	.sustainability.document .insec .frame .img img {
+		width: 760px;
+		max-width: none;
+		margin: 0 20px;
+	}
+	.sustainability.document .insec .bt_more {
+		font-size: 12px;
+		line-height: 1.6em;
+		font-weight: 500;
+		display: block;
+		margin-top: 15px;
+		position: relative;
+		width: 230px;
+		padding: 8px 0;
+	}
+	.sustainability.document .insec .bt_more::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1.5px;
+		width: 100%;
+		background: linear-gradient(90deg, #d0d0d0 0%, #7b7b7b 100%);
+	}
+	.sustainability.document .insec .bt_more::after {
+		opacity: 1;
+		bottom: 0;
+	}
+	
+	/*******************************************/
+	/* Environmental Initiatives */
+	/*******************************************/
+	.sustainability.document.environmental_initiatives .insec section {
+		margin-top: 20px;
+	}
+	.sustainability.document.environmental_initiatives .insec section + section {
+		margin-top: 40px;
+	}
+	.sustainability.document.environmental_initiatives .insec .fbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	.sustainability.document.environmental_initiatives .insec .fbox .text {
+		width: auto;
+	}
+	.sustainability.document.environmental_initiatives .insec .fbox .img {
+		width: auto;
+	}
+	.sustainability.document.environmental_initiatives .insec .fbox .img img {border-radius: 15px;}
+	.sustainability.document.environmental_initiatives .insec .fbox .img .caption {
+		text-align: right;
+		font-size: 11px;
+		margin-top: 9px;
+	}
+	
+	/*******************************************/
+	/* Value Creation Process */
+	/*******************************************/
+	.sustainability.document.commitment_to_human_rights .insec .frame img {
+	  width: 440px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.commitment_to_human_rights .insec .fbox {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 28px;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.sustainability.document.commitment_to_human_rights .insec .fbox .info {
+		width: auto;
+	}
+	.sustainability.document.commitment_to_human_rights .insec .fbox .info section:nth-child(1) {margin-top: 0;}
+	.sustainability.document.commitment_to_human_rights .insec .fbox .info h3 {
+		margin-bottom: 8px;
+	}
+	.sustainability.document.commitment_to_human_rights .insec .fbox .img {
+		width: auto;
+	}
+	.sustainability.document.commitment_to_human_rights .insec .fbox .img img {border-radius: 15px;}
+
+	/*******************************************/
+	/* Risk Management */
+	/*******************************************/
+	.sustainability.document.risk_management .insec .frame img {
+	  width: 640px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.risk_management .insec .fbox {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 14px;
+	}
+	.sustainability.document.risk_management .insec .fbox section {
+		width: auto;
+		margin-top: 25px;
+	}
+	.sustainability.document.risk_management .insec .fbox section:nth-child(1) {
+		margin-top: 20px;
+	}
+	.sustainability.document.risk_management .insec .fbox section:nth-child(2) {
+		margin-top: 30px;
+	}
+	.sustainability.document.risk_management .insec .fbox section h3 {
+		margin-bottom: 10px;
+	}
+	.sustainability.document.risk_management .insec .fbox + .text {
+		margin-top: 30px;
+	}
+	
+	/*******************************************/
+	/* Corporate Governance */
+	/*******************************************/
+	.sustainability.document.corporate_governance .insec#sec2 .frame img {
+	  width: 680px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.corporate_governance .insec#sec3 .frame img {
+	  width: 480px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.corporate_governance .insec#sec4 .frame img {
+	  width: 680px;
+	  margin: 0 20px;
+	}
+	
+	/*******************************************/
+	/* Human Capital Management */
+	/*******************************************/
+	.sustainability.document.human_capital_management .insec .hwrap {
+		display: flex;
+		align-items: start;
+	}
+	.sustainability.document.human_capital_management .insec .hwrap .labelstyle1 {
+		margin: 7px 0 0 13px;
+	}
+	.sustainability.document.human_capital_management .insec#sec4 .hwrap .labelstyle1 {
+		margin: 30px 0 0 13px;
+	}
+	.sustainability.document.human_capital_management .insec#sec1 .frame img {
+	  width: 580px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox {
+		justify-content: space-between;
+		margin-top: 20px;
+		gap: 30px;
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox section {
+	  border-left: 1px solid transparent;
+	  border-image: linear-gradient(to bottom, #47e2ff, #0460c1);
+	  border-image-slice: 1;
+	  width: auto;
+	  box-sizing: border-box;
+	  padding: 0 0 0 25px;
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox section h3 {
+		position: relative;
+		top: -12px;
+		left: -25px;
+		margin-bottom: 10px;
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox section .text {
+		
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox section .img {
+		margin-top: 30px;
+	}
+	.sustainability.document.human_capital_management .insec#sec2 .fbox section .img img {
+		border-radius: 15px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 section {
+		margin-top: 30px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox {
+		justify-content: space-between;
+		margin-top: 20px;
+		gap: 40px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section {
+		width: auto;
+		margin: 0;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section h4 {
+		background: linear-gradient(90deg, #222429 0%, #7d8087 100%);
+		text-align: center;
+		color: #fff;
+		font-size: 13px;
+		font-weight: bold;
+		width: 230px;
+		padding: 5px 0 4px 0;
+		margin-bottom: 15px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section ol {
+		margin-top: 20px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li + li {
+		margin-top: 24px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .title {
+		font-size: 14px;
+		font-weight: bold;
+		position: relative;
+		padding-left: 23px;
+		margin-bottom: 8px;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .title .num {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+		background-size: 100%;
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		display: block;
+		font-size: 18px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.sustainability.document.human_capital_management .insec#sec3 .fbox section ol li .text {
+		
+	}
+	
+	/*******************************************/
+	/* Climate Change Response */
+	/*******************************************/
+	.sustainability.document.climate_change_response .visual .label {
+		width: 110%;
+		font-size: 39px !important;
+	}
+	.sustainability.document.climate_change_response .insec#sec2 .frame img {
+	  width: 480px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox {
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .text {
+	  width: auto;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail {
+	  background: #fff;
+	  width: auto;
+	  border-radius: 15px;
+	  overflow: hidden;
+	  margin-top: 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .title {color: #fff;background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);font-weight: 500;font-size: 13px;padding: 13px 20px;}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info {padding: 13px 20px;}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text {font-size: 12px;width: auto;letter-spacing: 0;}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text + .text {margin-top: 13px;}
+	.sustainability.document.climate_change_response .insec#sec3 .fbox .detail .info .text span {display: block;font-weight: bold;}
+	
+	.sustainability.document.climate_change_response .insec#sec3 .frame img {
+	  width: 640px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .frame + .frame img {
+	  width: 740px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec3 .frame + .note {
+		margin-top: 15px;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox {
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox .info {
+	  width: auto;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox .info .text {background: url(../../images/sustainability/climate_change_response/img_logo_sbt.webp) no-repeat center right / 99px auto;padding: 0px 110px 0px 0;}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox .frame {
+	  width: 100%;
+	  box-sizing: border-box;
+	  margin: 20px 0 0 0;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox .frame .img {
+		padding: 0;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox .frame .img img {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sustainability.document.climate_change_response .insec#sec5 .fbox + .note {
+		margin-top: 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec6 section {
+		margin-top: 30px;
+	}
+	.sustainability.document.climate_change_response .insec#sec6 section .frame {margin-top: 15px;}
+	.sustainability.document.climate_change_response .insec#sec6 section .frame img {
+	  width: 600px;
+	  margin: 0 20px;
+	}
+	.sustainability.document.climate_change_response .insec#sec7 .frame .img img {
+		width: 84%;
+		margin: 0 auto;
+	}
+	/*******************************************/
+	/* Business Strategy */
+	/*******************************************/
+	.sustainability.document.business_strategy .sec.maincontent {
+		padding-bottom: 95px;
+	}
+	.sustainability.document.business_strategy .content .sec.construction>.inner>.info,
+	.sustainability.document.business_strategy .content .sec.growth>.inner>.info,
+	.sustainability.document.business_strategy .content .sec.innovation>.inner>.info {
+		padding: 0 0 54px 0;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 > .inner > section {
+		margin-top: 30px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .frame img {
+	  width: 83%;
+	  margin: 0 auto;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox {
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section {
+	  border-left: 1px solid transparent;
+	  border-image: linear-gradient(to bottom, #47e2ff, #0460c1);
+	  border-image-slice: 1;
+	  width: auto;
+	  box-sizing: border-box;
+	  padding: 0 0 0 20px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section h5 {
+		position: relative;
+		top: -12px;
+		left: -20px;
+		margin-bottom: 10px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section h5 > span {width: 100px;}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risk h5 span::before {
+		background: linear-gradient(90deg, #d0d0d0 0%, #7b7b7b 100%);
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risk {
+	  border-left: 1px solid transparent;
+	  border-image: linear-gradient(to bottom, #d0d0d0, #7b7b7b);
+	  border-image-slice: 1;
+	  width: auto;
+	  margin-top: 45px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec1 .fbox section .text {letter-spacing: 0;}
+	.secstyle1 {
+		margin-top: 25px !important;
+	}
+	.secstyle1 + .secstyle1 {
+		margin-top: 40px !important;
+	}
+	.secstyle1 h4 {font-size: 16px;font-weight: bold;width: 100%;margin-bottom: 18px;box-sizing: border-box;}
+	.secstyle1 .fbox {
+		justify-content: space-between;
+	}
+	.secstyle1 .fbox .info {
+		width: auto;
+	}
+	.secstyle1 .fbox .info .title {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.secstyle1 .fbox .info .title sup {display: inline-block;position: relative;top: -4px;font-size: 10px;font-weight: bold;}
+	.secstyle1 .fbox .info .text {
+		margin-top: 8px;
+	}
+	.secstyle1 .fbox .info .text strong {
+		font-weight: bold;
+	}
+	.secstyle1 .fbox .info .text .note {
+		
+	}
+	.secstyle1 .fbox .img {
+		width: auto;
+		margin-top: 20px;
+	}
+	.secstyle1 .fbox .img img {
+		border-radius: 15px;
+	}
+	.secstyle1 .fbox .img .caption {
+		text-align: right;
+		font-size: 11px;
+		margin-top: 9px;
+	}
+	.sustainability.document.business_strategy .insec#construction_sec2 .secstyle1 .img {margin-top: 20px;}
+	.sustainability.document.business_strategy .insec#construction_sec4 .frame img {
+	  width: 72%;
+	  margin: 0 auto;
+	}
+			
+	.sustainability.document.business_strategy .insec#growth_sec1 .frame img {	
+	    width: 580px;
+	}
+	.sustainability.document.business_strategy .insec#growth_sec2 .frame img {
+	  width: 72%;
+	  margin: 0 auto;
+	}
+	
+	.secstyle2 {
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-top: 30px;
+	}
+	.secstyle2 .box {
+		width: auto;
+	}
+	.secstyle2 .img {
+	}
+	.secstyle2 .img img {
+		border-radius: 15px;
+	}
+	.secstyle2 .info {
+		margin-top: 20px;
+	}
+	.secstyle2 .info .title {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.secstyle2 .info .title sup {display: inline-block;position: relative;top: -4px;font-size: 10px;font-weight: bold;}
+	.secstyle2 .info .text {
+		margin-top: 10px;
+		line-height: 1.6em;
+	}
+	.secstyle2 .info .text strong {
+		font-weight: bold;
+	}
+	.secstyle2 .info .label {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		margin-top: 12px;
+	}
+	.secstyle2 .info .label span {
+		display: block;
+		font-size: 13px;
+		background: #67c750;
+		border-radius: 100px;
+		padding: 1px 18px 0 18px;
+		color: #000;
+	}
+	.secstyle2 .info .label span.c2 {background: #48e3ff; }
+	.secstyle2 .info .label span.c3 {background: #af6448; color: #fff; }
+	.secstyle2 .info .label span.c4 {background: #486e7f; color: #fff; }
+	.secstyle2 .info .label span.c5 {background: #c8c8c8; }
+	.secstyle2 .info .label span.c6 {background: #ff97ff; }
+	.secstyle2 .info .label span.c7 {background: #4800ff; color: #fff; }
+	
+	.sustainability.document.business_strategy .insec#innovation_sec1 .frame img {
+	  width: 540px;
+	  margin: 0 20px;
+	}
+	
+	.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap {
+		display: block;
+		align-items: start;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap h3 {
+		margin-bottom: 0;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap .labelstyle1 {
+		margin: 17px 0 0 0;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 .hwrap .labelstyle1 + .labelstyle1 {
+		margin-left: 4px;
+	}
+	
+	.sustainability.document.business_strategy .insec#innovation_sec3 .fbox {
+		width: 100%;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 ol {
+		margin-top: 24px;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 ol li + li {
+		margin-top: 15px;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text {
+		font-size: 13px;
+		position: relative;
+		padding-left: 26px;
+		margin-bottom: 0;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text .num {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(0deg, #48E3FF 0%, #005EC0 100%);
+		background-size: 100%;
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		display: block;
+		font-size: 20px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-weight: bold;
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec3 ol li .text {
+		
+	}
+	.sustainability.document.business_strategy .insec#innovation_sec4 .frame img {
+	  width: 540px;
+	  margin: 0 20px;
+	}
+
+	.sustainability.document .insec ol.list3 li .title span {
+		display: block;
+		font-weight: 600;
+		display: block;
+		position: relative;
+		line-height: 1.5em;
+		width: 27px;
+	}
+
+}
+
+.procurement .insec:nth-child(n+2) {
+  margin-top: 2rem;
+}
+
+.procurement.document .insec .hstyle2 {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.procurement.document .insec .hstyle2::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.procurement.document .insec .hstyle2 > span:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+  line-height: 1.5em;
+  margin-right: 20px;
+}
+
+.procurement.document .insec .hstyle2 > span:nth-child(1) sup {
+  font-size: 12px;
+  position: relative;
+  top: -7px;
+  font-weight: bold;
+}
+
+.labelstyle1 {
+  display: block;
+  border-radius: 100px;
+  text-align: center;
+  background: #ededed;
+  border-radius: 100px;
+  position: relative;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  display: inline-block;
+  top: -1px;
+}
+
+#inner.procurement .content > .sec {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul.pdflist li {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -o-border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+     border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+}
+
+ul.pdflist li + li {
+  margin-top: -1px;
+}
+
+ul.pdflist li a {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+ul.pdflist li a::before {
+  content: "";
+  width: calc(100% + 40px);
+  height: calc(100% + 2px);
+  position: absolute;
+  display: block;
+  left: -20px;
+  top: -1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: scale(0.97);
+  background: #fff;
+}
+
+.pc_view ul.pdflist li a:hover {
+  opacity: 1;
+  -o-border-image: linear-gradient(to right, transparent, transparent) 1;
+     border-image: linear-gradient(to right, transparent, transparent) 1;
+  z-index: 100;
+}
+
+.pc_view ul.pdflist li a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+ul.pdflist li a.pdf::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../../images/icons/icon_pdf.svg) no-repeat center center/cover;
+  margin-left: 5px;
+  position: relative;
+}
+
+ul.pdflist li a > span {
+  position: relative;
+  font-size: 13px;
+  color: #0B5288;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  display: block;
+  max-width: calc(100% - 35px);
+}
+
+ul.pdflist li a.bt_movie {
+  flex-direction: column;
+  align-items: start;
+}
+
+ul.pdflist li a.bt_movie img {
+  display: block;
+  position: relative;
+  width: 287px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .procurement.document .insec .hstyle2 {
+    margin-bottom: 15px;
+    padding-left: 24px;
+  }
+  .procurement.document .insec .hstyle2::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(90deg, #48E3FF 0%, #005EC0 100%);
+    border-radius: 100px;
+    top: 4px;
+  }
+  .procurement.document .insec .hstyle2 > span:nth-child(1) {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.5em;
+    margin-right: 10px;
+  }
+  .procurement.document .insec .hstyle2 > span:nth-child(1) sup {
+    font-size: 12px;
+    position: relative;
+    top: -7px;
+    font-weight: bold;
+  }
+  .labelstyle1 {
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    background: #ededed;
+    border-radius: 100px;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    display: inline-block;
+    top: -1px;
+  }
+  ul.pdflist li {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -o-border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+       border-image: linear-gradient(to right, #dedede, #8c8c8c) 1;
+  }
+  ul.pdflist li + li {
+    margin-top: -1px;
+  }
+  ul.pdflist li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  ul.pdflist li a::before {
+    content: "";
+    width: calc(100% + 40px);
+    height: calc(100% + 2px);
+    position: absolute;
+    display: block;
+    left: -20px;
+    top: -1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: scale(0.97);
+    background: #fff;
+  }
+  .pc_view ul.pdflist li a:hover {
+    opacity: 1;
+    -o-border-image: linear-gradient(to right, transparent, transparent) 1;
+       border-image: linear-gradient(to right, transparent, transparent) 1;
+    z-index: 100;
+  }
+  .pc_view ul.pdflist li a:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  ul.pdflist li a.pdf::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../../images/icons/icon_pdf.svg) no-repeat center center/cover;
+    margin-left: 5px;
+  }
+  ul.pdflist li a > span {
+    position: relative;
+    font-size: 11px;
+    color: #0B5288;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    display: block;
+    max-width: calc(100% - 35px);
+  }
+  ul.pdflist li a.bt_movie {
+    flex-direction: column;
+    align-items: start;
+  }
+  ul.pdflist li a.bt_movie img {
+    display: block;
+    position: relative;
+    width: 214px;
+    margin-top: 10px;
+  }
+}
+
+/*******************************************/
+/* マテリアリティとKPI */
+/*******************************************/
+@media (max-width: 768px) {
+  .kpi_list {
+    display: none;
+  }
+}
+.kpi_list p {
+  font-size: 10px;
+  letter-spacing: -0.02em;
+}
+.kpi_list th, .kpi_list td {
+  vertical-align: middle;
+  border: 4px solid white;
+}
+.kpi_list th {
+  padding: 0.2rem 0.5rem;
+}
+.kpi_list th p {
+  white-space: nowrap;
+}
+.kpi_list td {
+  padding: 1rem 0.3rem;
+}
+.kpi_list table {
+  background: #EEEEEE;
+}
+.kpi_list thead tr {
+  background: linear-gradient(90deg, rgb(72, 227, 255) 0%, rgb(0, 95, 192) 100%);
+}
+.kpi_list thead th {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.kpi_list thead th:first-child {
+  width: 26%;
+}
+.kpi_list thead th:nth-child(2), .kpi_list thead th:nth-child(3) {
+  width: 19%;
+}
+.kpi_list thead th:nth-child(4) {
+  width: 17%;
+}
+.kpi_list tbody .kpi_mateliality_issue {
+  width: 13%;
+}
+.kpi_list tbody .kpi_mateliality_issue p {
+  white-space: nowrap;
+}
+.kpi_list .kpi_mateliality_porpose {
+  width: 13%;
+  min-width: 6.5rem;
+}
+.kpi_list .kpi_mateliality_porpose_wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  padding: 0.2rem;
+}
+.kpi_list h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: -0.05em;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.kpi_list .sdgs_icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 5.5rem;
+  margin: 0 auto;
+}
+.kpi_list .sdgs_icon img {
+  width: 2.5rem;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 768px) {
+  .sustainability.document .insec:has(.kpi_list_sp) .frame .title {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+  }
+  .sustainability.document .insec:has(.kpi_list_sp) .frame .title span {
+    font-size: 28px;
+  }
+}
+
+.kpi_list_sp {
+  display: none;
+}
+@media (max-width: 768px) {
+  .kpi_list_sp {
+    display: block;
+  }
+}
+.kpi_list_sp h3 {
+  margin-top: 2rem;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+.kpi_list_sp h3::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: #000;
+  margin: 1.5rem auto;
+}
+.kpi_list_sp p {
+  letter-spacing: -0.05em;
+}
+.kpi_list_sp .sdgs_icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 15.5rem;
+  margin: auto;
+}
+.kpi_list_sp .sdgs_icon img {
+  width: 4.5rem;
+  height: auto;
+}
+.kpi_list_sp .kpi_list_sp_item {
+  width: 95%;
+  margin: 0 auto;
+}
+.kpi_list_sp .kpi_list_sp_item:nth-child(n+2) {
+  margin-top: 4rem;
+}
+.kpi_list_sp h4 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.kpi_list_sp table th, .kpi_list_sp table td {
+  border: 4px solid white;
+  padding: 0.5rem 0.3rem;
+  vertical-align: middle;
+}
+.kpi_list_sp table th p, .kpi_list_sp table td p {
+  font-size: 12px;
+}
+.kpi_list_sp table th {
+  background: linear-gradient(90deg, rgb(72, 227, 255) 0%, rgb(0, 95, 192) 100%);
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+}
+.kpi_list_sp table td {
+  background: #EEEEEE;
+}
+.kpi_list_sp table .line_dashed_bottom {
+  border-bottom: unset;
+  background-image: repeating-linear-gradient(90deg, #ffffff, #ffffff 8px, transparent 8px, transparent 16px);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 100% 2px;
+}
+.kpi_list_sp table .line_dashed_mid {
+  border-top: unset;
+  border-bottom: unset;
+  background-image: repeating-linear-gradient(90deg, #ffffff, #ffffff 8px, transparent 8px, transparent 16px), repeating-linear-gradient(90deg, #ffffff, #ffffff 8px, transparent 8px, transparent 16px);
+  background-position: left top, left bottom;
+  background-repeat: repeat-x, repeat-x;
+  background-size: 100% 2px, 100% 2px;
+}
+.kpi_list_sp table .line_dashed_top {
+  border-top: unset;
+  background-image: repeating-linear-gradient(90deg, #ffffff, #ffffff 8px, transparent 8px, transparent 16px);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 100% 2px;
+}
+
+.remodal.remodal-is-opened {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.modal_img {
+  width: 35vw;
+  height: auto;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .modal_img {
+    width: 75vw;
+  }
+}
+.modal_img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.remodal-close {
+  top: calc(70px - 2rem);
+  right: -1.5rem;
+  left: unset;
+}
+@media (max-width: 768px) {
+  .remodal-close {
+    top: 0;
+    right: -1rem;
+  }
+}
+
+.line_blue{
+	border: 1.8px solid #24A1E0;
+}
+.line_blue::before{
+	content: unset;
+}
+.line_blue span{
+	background: white;
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risks h5 span::before {
+	background: linear-gradient(90deg, #47e2ff 0%, #0460c1 100%);
+}
+.sustainability.document.business_strategy .insec#construction_sec1 .fbox section.risks {
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #47e2ff, #0460c1);
+  border-image-slice: 1;
+  width: auto;
+  padding: 0 0 0 20px;
+}
