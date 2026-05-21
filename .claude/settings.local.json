@@ -4,7 +4,17 @@
       "Skill(coding-rule)",
       "mcp__claude_ai_Figma__get_design_context",
       "mcp__claude_ai_Figma__get_screenshot",
-      "Bash(curl -s -o /tmp/skill_matrix.png \"https://www.figma.com/api/mcp/asset/937b6772-24f4-47dd-96a4-cbc1d4332dcb\")"
+      "Bash(curl -s -o /tmp/skill_matrix.png \"https://www.figma.com/api/mcp/asset/937b6772-24f4-47dd-96a4-cbc1d4332dcb\")",
+      "Bash(curl -s -o /tmp/co2_figma.png \"https://www.figma.com/api/mcp/asset/04953bd0-8755-4f92-b39a-c5627eaa4e6d\")",
+      "Bash(curl -s \"https://www.figma.com/api/mcp/asset/7f565e3f-4a56-4e7c-a43c-5dd9ba488799\")",
+      "Bash(curl -s \"https://www.figma.com/api/mcp/asset/fbf266f1-ba6f-47b6-ba66-d890e6af427f\")",
+      "Bash(curl -s \"https://www.figma.com/api/mcp/asset/1ed4b661-2630-4335-a6a9-405daea46a20\")",
+      "Bash(curl -s \"https://www.figma.com/api/mcp/asset/d6bde071-082c-4111-b231-b62d77d19a83\")",
+      "Bash(curl -s \"https://www.figma.com/api/mcp/asset/0d39fe85-1741-4492-b2d2-ea213791e65f\")",
+      "Bash(curl *)",
+      "Bash(sips *)",
+      "Read(//Users/df/Library/CloudStorage/GoogleDrive-info@double-factory.com/マイドライブ/c_claude/**)",
+      "Bash(xargs sed -i '' 's/sustainability-new\\\\.css?v=2/sustainability-new.css?v=3/g')"
     ]
   }
 }

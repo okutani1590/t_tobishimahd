@@ -1,5 +1,418 @@
 @charset "UTF-8";
 
+/* SP/PC 改行制御 */
+.sp-br {
+  display: none;
+}
+.pc-br {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .sp-br {
+    display: inline;
+  }
+  .pc-br {
+    display: none;
+  }
+}
+
+/* ==============================
+   Component: c-link-btn
+   外部リンクアイコン付きリンクボタン
+   ============================== */
+.c-link-btn-wrap {
+  margin-top: 30px;
+}
+
+.c-link-btn-wrap--flex {
+  display: flex;
+  gap: 10px;
+}
+.c-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 16px 10px 24px;
+  background: #00c0f2;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.c-link-btn--green {
+  background: #00b191;
+}
+.c-link-btn--blue {
+  background: #005ec0;
+}
+
+.c-link-btn--darkblue {
+  background: #4a5eaa;
+}
+
+.c-link-btn:hover,
+.c-link-btn:focus-visible {
+  opacity: 0.8;
+}
+
+.c-link-btn__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ==============================
+   Component: tcfd-strategy
+   戦略セクション 2カラムレイアウト
+   ============================== */
+.tcfd-strategy {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.tcfd-strategy__list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tcfd-strategy__item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.tcfd-strategy__marker {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00b191;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.tcfd-strategy__item-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.tcfd-strategy__box {
+  flex: 1;
+  background: #fff;
+  border: 2px solid #00b191;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tcfd-strategy__box-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #00b191;
+}
+
+.tcfd-strategy__scenarios {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #333;
+}
+
+.tcfd-strategy__scenario {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tcfd-strategy__scenario-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.96;
+}
+
+.tcfd-strategy__scenario-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ==============================
+   Component: tcfd-scenario-table
+   シナリオ分析テーブル（時系列）
+   ============================== */
+.tcfd-scenario-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tcfd-scenario-table__header {
+  display: flex;
+  gap: 8px;
+}
+
+.tcfd-scenario-table__header-spacer {
+  flex: 2;
+  min-width: 0;
+}
+
+.tcfd-scenario-table__header-cell {
+  width: 201px;
+  min-width: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.tcfd-scenario-table__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tcfd-scenario-table__row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.tcfd-scenario-table__label {
+  flex: 2;
+  min-width: 0;
+  background: #c8e8df;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tcfd-scenario-table__label-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00b191;
+  line-height: 1;
+}
+
+.tcfd-scenario-table__label-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.tcfd-scenario-table__cell {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.tcfd-scenario-table__cell--last {
+  justify-content: center;
+  gap: 0;
+}
+
+.tcfd-scenario-table__cell-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+/* ==============================
+   Component: tcfd-risk-table
+   リスク・機会一覧テーブル
+   ============================== */
+.tcfd-risk-table-wrapper {
+  margin: 0 -4px;
+}
+
+.tcfd-risk-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  table-layout: fixed;
+}
+
+.tcfd-risk-table th,
+.tcfd-risk-table td {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px;
+}
+
+.tcfd-risk-table thead th {
+  background: #c8e8df;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 8px;
+}
+
+.tcfd-risk-table td.tcfd-risk-table__content {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px;
+}
+
+.tcfd-risk-table__content-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tcfd-risk-table ul {
+  list-style: disc;
+  padding-left: 1.4em;
+  margin: 0;
+}
+
+.tcfd-risk-table li + li {
+  margin-top: 4px;
+}
+
+.tcfd-risk-table sup {
+  font-size: 9px;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.tcfd-risk-footnotes {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.tcfd-risk-footnote {
+  display: flex;
+  gap: 4px;
+}
+
+.tcfd-risk-footnote__num {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   Component: tcfd-two-col
+   sec3 リスク管理・指標と目標 2カラム
+   ============================== */
+.tcfd-two-col {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.tcfd-two-col__col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tcfd-two-col__desc {
+  font-size: 16px;
+  line-height: 1.96;
+  color: #333;
+}
+
+/* Scope削減目標リスト */
+.tcfd-scope-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tcfd-scope-list__row {
+  display: flex;
+  gap: 4px;
+  align-items: stretch;
+}
+
+.tcfd-scope-list__label {
+  width: 118px;
+  flex-shrink: 0;
+  background: #c8e8df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+}
+
+.tcfd-scope-list__value {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* SBTロゴ */
+.tcfd-sbt-logo {
+  background: #fff;
+  padding: 12px;
+  align-self: flex-start;
+  display: block;
+}
+
+.tcfd-sbt-logo img {
+  display: block;
+  width: 216px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .tcfd-two-col {
+    flex-direction: column;
+  }
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
 .mt-60 {
   margin-top: 60px;
 }
@@ -8,9 +421,20 @@
   margin-top: 100px;
 }
 
+@media (max-width: 767px) {
+  .sp-mt-20 {
+    margin-top: 20px;
+  }
+}
+
 .sustainability {
   .content .sec > .inner {
     max-width: 1000px;
+  }
+  .content .sec > .inner--wide {
+    max-width: 1200px;
+    width: 90%;
+    margin-inline: auto;
   }
 
   .c-heading {
@@ -34,6 +458,26 @@
     margin-bottom: 35px;
   }
 
+  .c-list {
+    padding: 0px 0 20px;
+    i {
+      color: #005ec0;
+    }
+  }
+
+  .c-note {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    text-indent: -1.5em;
+    padding-left: 1em;
+    margin-top: 10px;
+    &::before {
+      content: "※";
+      margin-right: 4px;
+    }
+  }
   /* Business Strategy Card */
   .bs-card {
     background: #d5e9f6;
@@ -245,6 +689,63 @@
     background: #00c0f2;
   }
 
+  .img-frame {
+    margin-top: 20px;
+  }
+
+  .img-frame--flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Social Responsibility Article */
+  .sr-article {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .sr-article__content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sr-article__heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .sr-article__heading h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: normal;
+  }
+
+  .sr-article__body {
+    font-size: 18px;
+    line-height: 1.96;
+    color: #000;
+  }
+
+  .sr-article__img {
+    width: 480px;
+    height: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .sr-article__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
   /* Risk Management Chart */
   .graph-frame {
     overflow-x: auto;
@@ -257,162 +758,66 @@
     margin: 0 auto;
   }
 
-  .risk-chart {
-    position: relative;
-    min-width: 700px;
-    height: 323px;
-    background: #e0e9f6;
-    border-radius: 4px;
+  /* Risk Priority Table */
+  .risk-priority-table {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
-  .risk-chart__box {
-    position: absolute;
-    background: #fff;
-    border-radius: 4px;
+  .risk-priority-table__row {
+    display: flex;
+    gap: 4px;
+    align-items: stretch;
+  }
+
+  .risk-priority-table__label {
+    width: 162px;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
     text-align: center;
-    padding: 10px 12px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #005ec0;
-    line-height: 1.375;
   }
 
-  .risk-chart__box--directors {
-    top: 27px;
-    left: 2.7%;
-    width: 20%;
-    height: 60px;
+  .risk-priority-table__row--head .risk-priority-table__label {
+    background: #0099d8;
+    color: #fff;
+    font-weight: 600;
+    height: 48px;
   }
 
-  .risk-chart__box--management {
-    top: 26px;
-    left: 31.1%;
-    width: 20%;
-    height: 60px;
+  .risk-priority-table__row:not(.risk-priority-table__row--head) .risk-priority-table__label {
+    background: #e0e9f6;
+    color: #333;
   }
 
-  .risk-chart__box--internal-ctrl {
-    top: 26px;
-    left: 59.5%;
-    right: 3.3%;
-    height: 60px;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .risk-chart__box-title {
-    display: block;
-    font-weight: 700;
-  }
-
-  .risk-chart__box-sub {
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .risk-chart__box--hd-risk {
-    top: 131px;
-    left: 59.5%;
-    right: 3.3%;
-    height: 60px;
-  }
-
-  .risk-chart__box--biz-risk {
-    top: 236px;
-    left: 59.5%;
-    right: 3.3%;
-    height: 60px;
-  }
-
-  /* Connector arrows (取締役会 ↔ 経営会議) */
-  .risk-chart__connector {
-    position: absolute;
-    top: 26px;
-    left: 22.7%;
-    width: 8.4%;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .risk-chart__arrow {
-    position: relative;
-    height: 22px;
+  .risk-priority-table__content {
+    flex: 1;
+    min-width: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 1.5;
   }
 
-  .risk-chart__arrow-label {
-    position: relative;
-    z-index: 1;
-    background: #e0e9f6;
-    padding: 2px 4px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #005ec0;
-    white-space: nowrap;
+  .risk-priority-table__row--head .risk-priority-table__content {
+    background: #0099d8;
+    color: #fff;
+    font-weight: 600;
+    height: 48px;
   }
 
-  .risk-chart__arrow--report::before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    background: #005ec0;
-  }
-
-  .risk-chart__arrow--report::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 8px solid #005ec0;
-  }
-
-  .risk-chart__arrow--report .risk-chart__arrow-label {
-    margin-left: auto;
-  }
-
-  .risk-chart__arrow--supervise::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    background: #005ec0;
-  }
-
-  .risk-chart__arrow--supervise::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 8px solid #005ec0;
-  }
-
-  .risk-chart__arrow--supervise .risk-chart__arrow-label {
-    margin-right: auto;
+  .risk-priority-table__row:not(.risk-priority-table__row--head) .risk-priority-table__content {
+    background: #fff;
+    color: #333;
+    justify-content: flex-start;
   }
 
   /* Skill Matrix */
@@ -561,8 +966,8 @@
   }
 
   .cg-table--skills .cg-table__term {
-    width: 168px;
     font-size: 14px;
+    line-height: 1.5;
     justify-content: center;
     text-align: center;
   }
@@ -578,6 +983,347 @@
     color: #333;
     text-align: right;
     margin: 0;
+  }
+  @media (max-width: 767px) {
+    .cg-table__note {
+      text-align: left;
+    }
+  }
+
+  /* Company Card (construction_sec2) */
+  .company-card {
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .company-card__main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .company-card__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .company-card__heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 40px;
+    background: #0099d8;
+  }
+
+  .company-card__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+  }
+
+  .company-card__link-btn {
+    background: #0099d8;
+  }
+
+  .company-card__body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .company-card__desc {
+    width: 500px;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #000;
+  }
+
+  .company-card__features {
+    flex: 1;
+    min-width: 0;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .company-card__feature-tab {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    height: 32px;
+    padding: 0 20px 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    background: #fff;
+    border: 1px solid #0099d8;
+    border-right: none;
+    position: relative;
+  }
+
+  .company-card__feature-tab::after {
+    content: "";
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-top: 1px solid #0099d8;
+    border-right: 1px solid #0099d8;
+  }
+
+  .company-card__feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .company-card__feature-list li {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #000;
+  }
+
+  .company-card__feature-list li::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0099d8;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .company-card__results {
+    background: #ecf9ff;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .company-card__results-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c6ea3;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .company-card__result-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .company-card__result-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .company-card__result-name {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #000;
+  }
+
+  .company-card__result-name::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0099d8;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  .company-card__result-text {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #000;
+    padding-left: 16px;
+  }
+
+  /* Market Layout (construction_sec1) */
+  .market-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 1000px;
+  }
+
+  .market-layout__text {
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  .market-layout--no-chart .market-layout__text {
+    width: 100%;
+  }
+
+  .market-layout__body {
+    font-size: 18px;
+    line-height: 1.96;
+    color: #333;
+  }
+
+  .market-layout__chart {
+    width: 50%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .market-layout__chart-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c6ea3;
+    line-height: normal;
+  }
+
+  .market-layout__chart-img {
+    background: #e3e3e3;
+  }
+
+  .market-layout__chart-img img,
+  .market-layout__chart > img {
+    width: 100%;
+    display: block;
+  }
+
+  .market-layout__note {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    text-align: right;
+  }
+
+  /* Risk & Opportunity Layout (construction_sec1) */
+  .risk-opp {
+    display: flex;
+    gap: 56px;
+    align-items: flex-start;
+    min-width: 1000px;
+    margin-top: 60px;
+  }
+
+  .risk-opp__col {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 472px;
+    flex-shrink: 0;
+  }
+
+  .risk-opp__badge {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0099d8;
+  }
+
+  &.growth_business .risk-opp__badge {
+    color: #43b681;
+  }
+  &.innovation_business .risk-opp__badge {
+    color: #00c0f2;
+  }
+
+  .risk-opp__items {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .risk-opp__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .risk-opp__item-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c6ea3;
+    line-height: 1;
+  }
+
+  .risk-opp__item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .risk-opp__item-list li {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .risk-opp__item-list li::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0099d8;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  &.growth_business .risk-opp__item-list li::before {
+    background: #43b681;
+  }
+
+  &.innovation_business .risk-opp__item-list li::before {
+    background: #00c0f2;
   }
 
   /* Portfolio diagram */
@@ -721,6 +1467,13 @@
     align-items: flex-start;
   }
 
+  @media (max-width: 767px) {
+    .tm-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   .tm-top__text {
     width: 400px;
     flex-shrink: 0;
@@ -787,6 +1540,11 @@
     min-width: 1016px;
     margin-bottom: 10px;
   }
+  @media (max-width: 767px) {
+    .kpi-table {
+      min-width: auto;
+    }
+  }
 
   .kpi-table__col {
     width: 328px;
@@ -813,6 +1571,12 @@
     padding: 12px;
     text-align: center;
     vertical-align: middle;
+  }
+
+  @media (max-width: 767px) {
+    .kpi-table td {
+      font-size: 14px;
+    }
   }
 
   /* Shareholder Dialogue Card */
@@ -856,6 +1620,336 @@
     color: #333;
     line-height: 1.5;
   }
+
+  /* CO2排出削減目標テーブル */
+  .co2-table {
+    border-collapse: separate;
+    border-spacing: 4px;
+    table-layout: fixed;
+    min-width: 1000px;
+    width: 100%;
+  }
+
+  .co2-table th {
+    background: #0c6ea3;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 12px;
+    height: 41px;
+  }
+
+  .co2-table__head-year {
+    width: 154px;
+  }
+
+  .co2-table__scope {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 5px;
+    line-height: normal;
+  }
+
+  .co2-table__scope--s1 {
+    background: #0c6ea3;
+  }
+
+  .co2-table__scope--s2 {
+    background: #7570b4;
+  }
+
+  .co2-table__scope--s3 {
+    background: #43b681;
+  }
+
+  .co2-table__desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.26;
+    padding: 14px 16px;
+    vertical-align: middle;
+    background: #fff;
+  }
+
+  .co2-table__val {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.26;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    padding: 14px 8px;
+  }
+
+  /* サプライチェーンの主なCO2排出 */
+  .supply-co2 {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .supply-co2__row {
+    display: flex;
+    align-items: stretch;
+    height: 112px;
+    gap: 4px;
+  }
+
+  .supply-co2__label {
+    width: 46px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.96;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .supply-co2__row--s1 .supply-co2__label {
+    background: #0c6ea3;
+  }
+  .supply-co2__row--s2 .supply-co2__label {
+    background: #7570b4;
+  }
+  .supply-co2__row--s3 .supply-co2__label {
+    background: #43b681;
+  }
+
+  .supply-co2__badge {
+    width: 168px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    line-height: normal;
+  }
+
+  .supply-co2__row--s1 .supply-co2__badge {
+    background: #0c6ea3;
+  }
+  .supply-co2__row--s2 .supply-co2__badge {
+    background: #7570b4;
+  }
+  .supply-co2__row--s3 .supply-co2__badge {
+    background: #43b681;
+  }
+
+  .supply-co2__list {
+    flex: 1;
+    min-width: 0;
+    list-style: none;
+    counter-reset: supply-item;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .supply-co2__list li {
+    counter-increment: supply-item;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.26;
+    color: #000;
+    padding: 9px 20px 9px 40px;
+    border-bottom: 1px solid #d5d5d5;
+  }
+
+  .supply-co2__list li::before {
+    content: counter(supply-item) ". ";
+    position: absolute;
+    left: 18px;
+  }
+
+  .supply-co2__list li:last-child {
+    border-bottom: none;
+  }
+
+  .supply-co2__sep {
+    height: 40px;
+    position: relative;
+  }
+
+  .supply-co2__sep::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 15px solid #0071bc;
+  }
+
+  @media (max-width: 767px) {
+    .supply-co2__sep::before {
+      top: 25%;
+      left: 50% !important;
+      transform: translateY(-50%) !important;
+      transform: translateX(-50%) !important;
+    }
+  }
+
+  /* Message Card */
+  .msg-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .msg-card__top {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .msg-card__photo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .msg-card__photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .msg-card__profile {
+    width: 420px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .msg-card__heading-wrap {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .msg-card__title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(to right, #47e1fe, #0160c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .msg-card__heading-wrap::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, #47e1fe, #0160c1);
+  }
+
+  .msg-card__name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .msg-card__role {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.7);
+    line-height: normal;
+  }
+
+  .msg-card__person {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    line-height: normal;
+  }
+
+  .msg-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-inline: 40px;
+  }
+
+  .msg-card__body .hstyle2 {
+    margin-bottom: 0;
+  }
+
+  .msg-card__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.96;
+    color: #000;
+  }
+
+  .msg-card__text p {
+    margin: 0;
+  }
+
+  .msg-card__text p + p {
+    margin-top: 1.96em;
+  }
+
+  .msg-card--reverse .msg-card__top {
+    flex-direction: row-reverse;
+    padding-left: 40px;
+  }
+}
+
+/* ロードマップ */
+
+.load-map-sec {
+  .flex-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  .flex-container .img {
+    flex: 1;
+    min-width: 0;
+  }
+  .flex-container .img img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.load-map-sec .img span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0c6ea3;
+  line-height: 1.26;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -909,17 +2003,1534 @@
       padding-inline: 0;
     }
 
+    .market-layout {
+      flex-direction: column;
+      gap: 32px;
+      min-width: 0;
+    }
+
+    .market-layout__text {
+      width: 100%;
+    }
+
+    .sr-article {
+      flex-direction: column;
+    }
+
+    .sr-article__img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 480 / 304;
+    }
+
+    .market-layout__body {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .risk-opp {
+      flex-direction: column;
+      gap: 32px;
+      min-width: 0;
+    }
+
+    .risk-opp__col {
+      width: 100%;
+    }
+
+    .company-card {
+      margin-top: 60px;
+      padding: 24px 16px;
+      border-radius: 12px;
+    }
+
+    .company-card__body {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .company-card__desc {
+      width: 100%;
+    }
+
+    .company-card__features {
+      border-left: none;
+      border-top: 1px solid #ddd;
+      padding-left: 0;
+      padding-top: 16px;
+    }
+
+    .cg-table__list {
+      overflow-x: visible;
+    }
+
     .cg-table__row {
       flex-direction: column;
       gap: 0;
     }
 
-    .cg-table__term {
-      width: 100%;
+    .cg-table__term,
+    .cg-table__desc {
+      width: 100% !important;
+      min-width: 0;
+      margin-inline-start: 0;
+      flex-shrink: 1;
     }
 
     .bg-frame--white {
       padding: 20px 16px;
     }
+
+    .msg-card {
+      padding: 24px 16px;
+      border-radius: 12px;
+    }
+
+    .msg-card__top {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .msg-card__profile {
+      width: 100%;
+    }
+
+    .msg-card__title {
+      font-size: 20px;
+    }
+
+    .msg-card__person {
+      font-size: 22px;
+    }
+
+    .msg-card__text {
+      font-size: 15px;
+    }
+  }
+}
+
+/* ==============================
+   Component: topics-block
+   TOPICSセクション（コンプライアンスTOPICS）
+   ============================== */
+.topics-block {
+  margin-top: 40px;
+}
+
+.topics-block__header {
+  display: flex;
+  align-items: stretch;
+  height: 44px;
+}
+
+.topics-block__header-label {
+  background: #fff;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  padding: 0 80px 0 20px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.topics-block__header-label span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  background: linear-gradient(to right, #47e1fe, #0160c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.topics-block__header-accent {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #47e1fe 0%, #0160c1 100%);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.topics-block__body {
+  background: #d4effc;
+  border-radius: 0 12px 12px 12px;
+  padding: 44px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.topics-block__article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topics-block__article-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0c6ea3;
+  line-height: 1;
+}
+
+.topics-block__article-lead {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.96;
+  color: #333;
+}
+
+.topics-block__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.topics-block__card-col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.topics-block__card-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topics-block__card-heading p {
+  padding-left: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+.topics-block__card-heading p:before {
+  content: "";
+  display: block;
+  width: 12px !important;
+  height: 12px !important;
+  left: 0;
+  top: 5px !important;
+}
+
+.topics-block .topics-block__card-heading p span {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0c6ea3 !important;
+}
+
+.topics-block__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.96;
+  color: #333;
+}
+
+.topics-block__illust {
+  text-align: center;
+}
+
+.topics-block__illust img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Segment badge variant */
+.topics-block__article {
+  position: relative;
+}
+
+.topics-block__segment-badge {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background: #0c6ea3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 9px 24px 11px;
+  border-radius: 20px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.topics-block__card--with-badge {
+  border-radius: 0 16px 16px 16px;
+  padding: 48px;
+}
+
+.topics-block__item-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0099d8;
+  line-height: normal;
+}
+
+.topics-block__item-body {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .topics-block__body {
+    padding: 32px 20px 36px;
+  }
+
+  .topics-block__card {
+    flex-direction: column;
+    padding: 24px 20px;
+  }
+
+  .topics-block__card--with-badge {
+    padding: 40px 20px 24px;
+    border-radius: 0 12px 12px 12px;
+  }
+
+  .topics-block__segment-badge {
+    font-size: 16px;
+    padding: 7px 16px 9px;
+  }
+
+  .topics-block__item-title {
+    font-size: 17px;
+  }
+
+  .topics-block__item-body {
+    font-size: 15px;
+  }
+
+  .topics-block__article-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+/* ==============================
+   Component: materiality-process
+   マテリアリティ特定プロセス ステップ図
+   ============================== */
+
+.materiality-process {
+  margin-top: 40px;
+}
+
+.materiality-process__item {
+  padding-top: 20px;
+}
+
+.materiality-process__box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #005ec0;
+  border-radius: 20px;
+  padding: 20px 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.materiality-process__banner {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #003153;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 7px 20px;
+  border-radius: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.materiality-process__steps {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.materiality-process__step {
+  flex: 1;
+  border-radius: 100px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.materiality-process__step--1 {
+  background: #00c0f2;
+}
+.materiality-process__step--2 {
+  background: #0099d8;
+}
+.materiality-process__step--3 {
+  background: #005ec0;
+}
+.materiality-process__step--4 {
+  background: #4a5eaa;
+}
+
+.materiality-process__num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+.materiality-process__num-label {
+  font-size: 12px;
+}
+
+.materiality-process__num-digit {
+  font-size: 20px;
+}
+
+.materiality-process__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.materiality-process__arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 37px;
+}
+
+@media (max-width: 767px) {
+  .tcfd-strategy {
+    flex-direction: column;
+  }
+
+  .tcfd-strategy__item-text {
+    font-size: 15px;
+  }
+
+  .tcfd-strategy__box-title {
+    font-size: 17px;
+  }
+}
+
+/* ==============================
+   Component: grp-table-block
+   グループ会社と技術テーブル
+   ============================== */
+.grp-table-block {
+  margin-top: 40px;
+}
+
+.grp-table-block__title {
+  display: inline-flex;
+  align-items: stretch;
+  height: 44px;
+  margin-bottom: 0;
+}
+
+.grp-table-block__title-inner {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: #fff;
+}
+
+.grp-table-block__title-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  background: linear-gradient(to right, #47e1fe, #0160c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.grp-table-block__title-deco {
+  width: 44px;
+  background: linear-gradient(to right, #47e1fe, #0160c1);
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  flex-shrink: 0;
+}
+
+.grp-table-wrap {
+  overflow-x: auto;
+}
+
+.grp-table {
+  border-collapse: separate;
+  border-spacing: 4px;
+  table-layout: fixed;
+  width: 1000px;
+}
+
+.grp-table thead tr {
+  height: 64px;
+}
+
+.grp-table__header-corner {
+  position: relative;
+  width: 132px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.grp-table__header-corner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3aad78 0%, #3aad78 calc(50% - 0.5px), rgba(255, 255, 255, 0.5) calc(50% - 0.5px), rgba(255, 255, 255, 0.5) calc(50% + 0.5px), #41c287 calc(50% + 0.5px), #41c287 100%);
+}
+
+.grp-table__corner-company {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.grp-table__corner-domain {
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.grp-table__company-header {
+  background: #41c287;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.grp-table__company-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.grp-table__company-name:hover {
+  opacity: 0.8;
+}
+
+.grp-table__company-icon {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+.grp-table tbody tr {
+  height: 48px;
+}
+
+.grp-table__area-header {
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.grp-table__cell {
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.grp-table__cell--active {
+  background: #e4faf0;
+}
+
+.grp-table__dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #41c287;
+}
+
+/* ==============================
+   Component: innov-topic
+   イノベーション事業 注力施策 番号付きトピックブロック
+   ============================== */
+.innov-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.innov-topic__title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.innov-topic__num {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background: #00c0f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.innov-topic__heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0c6ea3;
+  line-height: normal;
+}
+
+.innov-topic__body {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.innov-topic__text {
+  font-size: 18px;
+  line-height: 1.96;
+  color: #000;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.innov-topic__img-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 26px 28px 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.innov-topic__img-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.innov-topic__sup {
+  font-size: 0.65em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.innov-topic__content {
+  width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.innov-topic__content .innov-topic__text {
+  width: auto;
+}
+
+.innov-topic__notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.innov-topic__note {
+  display: flex;
+  gap: 4px;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.innov-topic__note-num {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.innov-topic__img-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.innov-topic__img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .innov-topic__body {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .innov-topic__text {
+    width: 100%;
+  }
+
+  .innov-topic__img-card {
+    width: 100%;
+  }
+
+  .innov-topic__content {
+    width: 100%;
+  }
+
+  .innov-topic__img-wrap {
+    width: 100%;
+  }
+}
+
+/* ==============================
+   Component: strat-block
+   グロース事業 注力施策・今後の対応ブロック
+   ============================== */
+.strat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.strat-block {
+  position: relative;
+  padding-top: 24px;
+}
+
+.strat-block__label {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  z-index: 2;
+}
+
+.strat-block__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.strat-block__icon-inner {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.strat-block__icon-inner img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.strat-block__pill {
+  height: 64px;
+  padding: 0 40px 0 40px;
+  margin-left: -30px;
+  border-radius: 0 32px 32px 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1.1px;
+  line-height: 1;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.strat-block--chiiki .strat-block__icon {
+  background: #5bc896;
+}
+.strat-block--chiiki .strat-block__pill {
+  background: #5bc896;
+}
+.strat-block--mizu .strat-block__icon {
+  background: #6fc3e3;
+}
+.strat-block--mizu .strat-block__pill {
+  background: #6fc3e3;
+}
+.strat-block--mokuzai .strat-block__icon {
+  background: #a68571;
+}
+.strat-block--mokuzai .strat-block__pill {
+  background: #a68571;
+}
+.strat-block--bousai .strat-block__icon {
+  background: #bd90db;
+}
+.strat-block--bousai .strat-block__pill {
+  background: #bd90db;
+}
+
+.strat-block__body {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.strat-block__img-wrap {
+  width: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: 240px;
+  background: #dde6ea;
+  flex-shrink: 0;
+}
+
+.strat-block__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.strat-block__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.strat-block__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.strat-block__section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0c6ea3;
+  line-height: normal;
+}
+
+.strat-block__section-text {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .strat-list {
+    gap: 60px;
+  }
+
+  .strat-block__body {
+    flex-direction: column;
+  }
+
+  .strat-block__img-wrap {
+    width: 100%;
+  }
+
+  .strat-block__section-title {
+    font-size: 18px;
+  }
+
+  .strat-block__section-text {
+    font-size: 16px;
+  }
+}
+
+/* ==============================
+   Component: materiality-detail
+   マテリアリティ詳細ステップ + マトリックス
+   ============================== */
+.materiality-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* ---- Left: STEP list ---- */
+.materiality-detail__steps {
+  width: 396px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.materiality-detail__step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.materiality-detail__badge {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.materiality-detail__badge--1 {
+  background: #00c0f2;
+}
+.materiality-detail__badge--2 {
+  background: #0099d8;
+}
+.materiality-detail__badge--3 {
+  background: #005ec0;
+}
+.materiality-detail__badge--4 {
+  background: #4a5eaa;
+}
+
+.materiality-detail__badge-label {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.materiality-detail__badge-num {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.materiality-detail__list {
+  flex: 1;
+  min-width: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.materiality-detail__item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.materiality-detail__item::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0099d8;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.materiality-detail__item--filled::before {
+  background: #005ec0;
+}
+
+.materiality-detail__desc {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+/* ---- Right: Matrix ---- */
+.materiality-detail__right {
+  flex: 1;
+  min-width: 0;
+}
+
+/* CSS Grid overlay: cells-layer と scatter-layer を同一セルに重ねる */
+.materiality-detail__overlay {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  place-items: start;
+}
+
+.materiality-detail__cells-layer {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 45px;
+  width: 527px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Matrix header */
+.materiality-detail__matrix-header {
+  background: #0099d8;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.materiality-detail__matrix-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.materiality-detail__matrix-desc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* 3-column grid */
+.materiality-detail__cols {
+  display: flex;
+  gap: 5px;
+}
+
+.materiality-detail__col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.materiality-detail__col--1 {
+  width: 143px;
+}
+.materiality-detail__col--2 {
+  width: 177px;
+}
+.materiality-detail__col--3 {
+  flex: 1;
+}
+
+.materiality-detail__cell {
+  background: #fff;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.materiality-detail__cell--blue {
+  background: #d4effc;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.materiality-detail__cell--empty {
+  padding: 0;
+}
+
+.materiality-detail__cell--tall {
+  height: 178px;
+}
+
+.materiality-detail__cell--sm {
+  height: 38px;
+}
+
+/* Cell list items */
+.materiality-detail__cell-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Tags (materiality items) */
+.materiality-detail__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100px;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+}
+
+.materiality-detail__tag--green {
+  color: #00b191;
+}
+.materiality-detail__tag--orange {
+  color: #ff8e1d;
+}
+.materiality-detail__tag--purple {
+  color: #4a5eaa;
+}
+.materiality-detail__tag--lightblue {
+  color: #0099d8;
+}
+
+/* ---- Scatter overlay layer ---- */
+.materiality-detail__scatter-layer {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  place-items: start;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.materiality-detail__scatter-layer > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.materiality-detail__scatter-img {
+  margin-left: 34px;
+  margin-top: 0;
+  display: block;
+  width: 538px;
+  height: 409px;
+}
+
+/* Y-axis label (vertical text) */
+.materiality-detail__y-label {
+  margin-left: 0;
+  margin-top: 129px;
+  background: #005ec0;
+  border-radius: 100px;
+  padding: 6px 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materiality-detail__y-label span {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+
+/* X-axis label (horizontal) */
+.materiality-detail__x-label {
+  margin-left: 221px;
+  margin-top: 420px;
+  background: #005ec0;
+  border-radius: 100px;
+  padding: 2px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materiality-detail__x-label span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .materiality-detail {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .materiality-detail__steps {
+    width: 100%;
+  }
+
+  .materiality-detail__right {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .materiality-detail__overlay {
+    min-width: 580px;
+  }
+}
+
+/* ==============================
+   group-sustainability SP responsive
+   ============================== */
+@media (max-width: 767px) {
+  /* graph-frame 内の画像を幅100%に */
+  .graph-frame .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* CO2排出削減目標テーブル */
+  .sustainability .co2-table {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .sustainability .co2-table th {
+    font-size: 11px;
+    height: 32px;
+    padding: 0 4px;
+  }
+
+  .sustainability .co2-table__head-year {
+    width: auto;
+    min-width: 56px;
+  }
+
+  .sustainability .co2-table__scope {
+    font-size: 10px;
+    padding: 4px 2px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+  }
+
+  .sustainability .co2-table__desc {
+    font-size: 11px;
+    padding: 8px 6px;
+    line-height: 1.4;
+  }
+
+  .sustainability .co2-table__val {
+    font-size: 11px;
+    padding: 6px 3px;
+    line-height: 1.4;
+  }
+
+  /* サプライチェーンの主なCO2排出 */
+  .sustainability .supply-co2 {
+    min-width: 0;
+  }
+
+  .sustainability .supply-co2__row {
+    flex-direction: column;
+    height: auto;
+    gap: 5px;
+  }
+
+  .sustainability .supply-co2__label {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    writing-mode: horizontal-tb;
+  }
+
+  .sustainability .supply-co2__badge {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 0;
+  }
+
+  .sustainability .supply-co2__list {
+    width: 100%;
+  }
+
+  .sustainability .supply-co2__list li {
+    font-size: 14px;
+    padding: 10px 16px 10px 36px;
+    line-height: 1.5;
+  }
+
+  .sustainability .supply-co2__list li::before {
+    left: 14px;
+  }
+
+  .sustainability .supply-co2__sep {
+    height: 24px;
+  }
+
+  /* 削減ロードマップ 2カラム → 縦積み */
+  .load-map-sec .flex-container {
+    flex-direction: column;
+  }
+
+  /* CO2テーブル → SPカードに切り替え */
+  .co2-table-wrap {
+    display: none;
+  }
+
+  .co2-cards {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+/* CO2カードレイアウト（PC非表示） */
+.co2-cards {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .co2-cards__group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .co2-cards__year {
+    background: #0c6ea3;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 16px;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  .co2-cards__row {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .co2-cards__scope {
+    flex-shrink: 0;
+    width: 68px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .co2-cards__row--s1 .co2-cards__scope {
+    background: #0c6ea3;
+  }
+  .co2-cards__row--s2 .co2-cards__scope {
+    background: #7570b4;
+  }
+  .co2-cards__row--s3 .co2-cards__scope {
+    background: #43b681;
+  }
+
+  .co2-cards__desc {
+    flex: 1;
+    min-width: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+
+  .co2-cards__val {
+    flex-shrink: 0;
+    width: 84px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    padding: 10px 6px;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    background: #fff;
+  }
+}
+
+/* ==============================
+   Component: tcfd-scenario-table SP
+   ============================== */
+.tcfd-scenario-table__cell-year {
+  display: none;
+}
+
+.tcfd-scenario-table__cell-inner {
+  display: contents;
+}
+
+@media (max-width: 767px) {
+  .tcfd-scenario-table__header {
+    display: none;
+  }
+
+  .tcfd-scenario-table__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tcfd-scenario-table__row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tcfd-scenario-table__label {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .tcfd-scenario-table__cell {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    gap: 0;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .tcfd-scenario-table__cell-year {
+    display: flex;
+    flex-shrink: 0;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    padding: 8px 4px;
+    background: #f5f7fa;
+    border-right: 1px solid #e0e0e0;
+  }
+
+  .tcfd-scenario-table__cell-inner {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    gap: 10px;
+    align-items: center;
+    padding: 12px;
+    background: #fff;
+  }
+
+  .tcfd-scenario-table__cell-inner svg {
+    flex-shrink: 0;
+  }
+
+  .tcfd-scenario-table__cell--last .tcfd-scenario-table__cell-year {
+    border-bottom: none;
+  }
+}
+
+/* ==============================
+   human_capital_management SP responsive
+   ============================== */
+@media (max-width: 767px) {
+  .tm-section {
+    min-width: 0;
+    gap: 24px;
+  }
+
+  .tm-top__text {
+    width: 100%;
+  }
+
+  .tm-top__body {
+    font-size: 14px;
+  }
+
+  .tm-top__diagram img,
+  .tm-cycle img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .kpi-table {
+    width: 100%;
+    table-layout: auto;
+  }
+
+  .kpi-table__col {
+    width: auto;
+  }
+
+  .kpi-table th,
+  .kpi-table td {
+    font-size: 13px;
+    padding: 8px 6px;
   }
 }
