@@ -2,7 +2,7 @@
 
 /* SP/PC 改行制御 */
 .sp-br {
-  display: none;
+  display: none !important;
 }
 .pc-br {
   display: inline;
@@ -10,10 +10,10 @@
 
 @media (max-width: 767px) {
   .sp-br {
-    display: inline;
+    display: inline !important;
   }
   .pc-br {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -25,6 +25,11 @@
   margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .c-link-btn-wrap {
+    margin-top: 15px;
+  }
+}
 .c-link-btn-wrap--flex {
   display: flex;
   gap: 10px;
@@ -130,6 +135,11 @@
   color: #333;
 }
 
+@media (max-width: 767px) {
+  .tcfd-strategy__scenario {
+    margin-bottom: 20px;
+  }
+}
 .tcfd-strategy__scenario {
   display: flex;
   flex-direction: column;
@@ -142,6 +152,11 @@
   line-height: 1.96;
 }
 
+@media (max-width: 767px) {
+  .tcfd-strategy__scenario-heading {
+    font-size: 14px;
+  }
+}
 .tcfd-strategy__scenario-text {
   font-size: 14px;
   line-height: 1.5;
@@ -213,6 +228,12 @@
   color: #333;
 }
 
+@media (max-width: 767px) {
+  .tcfd-scenario-table__label-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
 .tcfd-scenario-table__cell {
   flex: 1;
   min-width: 0;
@@ -236,12 +257,24 @@
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .tcfd-scenario-table__cell-text {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
 /* ==============================
    Component: tcfd-risk-table
    リスク・機会一覧テーブル
    ============================== */
 .tcfd-risk-table-wrapper {
   margin: 0 -4px;
+}
+@media (max-width: 767px) {
+  .sp-tcfd-risk-table-wrapper {
+    overflow: auto;
+  }
 }
 
 .tcfd-risk-table {
@@ -251,6 +284,11 @@
   table-layout: fixed;
 }
 
+@media (max-width: 767px) {
+  .tcfd-risk-table {
+    width: 1000px;
+  }
+}
 .tcfd-risk-table th,
 .tcfd-risk-table td {
   font-size: 14px;
@@ -315,6 +353,12 @@
 .tcfd-risk-footnote__num {
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .tcfd-risk-footnotes p {
+    font-size: 12px;
+  }
 }
 
 /* ==============================
@@ -397,9 +441,27 @@
 }
 
 @media (max-width: 767px) {
+  .tcfd-sbt-logo {
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .tcfd-sbt-logo img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
   .tcfd-two-col {
     flex-direction: column;
   }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .mt-30 {
@@ -424,6 +486,9 @@
 @media (max-width: 767px) {
   .sp-mt-20 {
     margin-top: 20px;
+  }
+  .sp-mt-0 {
+    margin-top: 0;
   }
 }
 
@@ -692,6 +757,9 @@
   .img-frame {
     margin-top: 20px;
   }
+  .img-frame img {
+    margin: 0 auto;
+  }
 
   .img-frame--flex {
     display: flex;
@@ -726,10 +794,22 @@
     line-height: normal;
   }
 
+  @media (max-width: 767px) {
+    .sr-article__heading h3 {
+      font-size: 16px;
+      margin-bottom: 0 !important;
+    }
+  }
+
   .sr-article__body {
     font-size: 18px;
     line-height: 1.96;
     color: #000;
+  }
+  @media (max-width: 767px) {
+    .sr-article__body {
+      font-size: 15px;
+    }
   }
 
   .sr-article__img {
@@ -940,6 +1020,7 @@
     display: flex;
     align-items: center;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .cg-table__desc {
@@ -954,6 +1035,7 @@
     display: flex;
     align-items: center;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .cg-table__desc-list {
@@ -975,11 +1057,12 @@
   .cg-table--skills .cg-table__desc {
     font-size: 14px;
     color: #333;
+    line-height: 1.8em;
   }
 
   .cg-table__note {
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #333;
     text-align: right;
     margin: 0;
@@ -1205,6 +1288,11 @@
     flex-direction: column;
     gap: 22px;
   }
+  @media (max-width: 767px) {
+    .market-layout__chart {
+      width: 100%;
+    }
+  }
 
   .market-layout__chart-title {
     font-size: 20px;
@@ -1410,16 +1498,22 @@
   .eval-text {
     font-size: 14px;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.8;
   }
 
   /* Remuneration Table */
   .rem-table {
     border-collapse: separate;
-    border-spacing: 6px;
+    border-spacing: 3px;
     table-layout: fixed;
-    min-width: 1014px;
+
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .rem-table {
+      width: 1000px;
+    }
   }
 
   .rem-table th {
@@ -1534,20 +1628,63 @@
 
   /* KPI Table (指標・目標・実績) */
   .kpi-table {
-    border-collapse: separate;
-    border-spacing: 8px;
-    table-layout: fixed;
-    min-width: 1016px;
+    display: block;
+    width: 100%;
     margin-bottom: 10px;
   }
+
+  .kpi-table tbody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
   @media (max-width: 767px) {
-    .kpi-table {
-      min-width: auto;
+    .kpi-table tbody {
+      display: flex;
+      flex-direction: column;
     }
   }
 
-  .kpi-table__col {
-    width: 328px;
+  .kpi-table tbody tr {
+    display: contents;
+  }
+
+  /* PC: 各trを列として配置（転置） */
+  .kpi-table tbody tr:nth-child(1) th {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .kpi-table tbody tr:nth-child(1) td:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .kpi-table tbody tr:nth-child(1) td:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .kpi-table tbody tr:nth-child(2) th {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .kpi-table tbody tr:nth-child(2) td:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .kpi-table tbody tr:nth-child(2) td:nth-child(3) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .kpi-table tbody tr:nth-child(3) th {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .kpi-table tbody tr:nth-child(3) td:nth-child(2) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .kpi-table tbody tr:nth-child(3) td:nth-child(3) {
+    grid-column: 3;
+    grid-row: 3;
   }
 
   .kpi-table th {
@@ -1555,11 +1692,12 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1;
     padding: 8px;
     text-align: center;
-    vertical-align: middle;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
   }
 
   .kpi-table td {
@@ -1570,13 +1708,9 @@
     line-height: 1.5;
     padding: 12px;
     text-align: center;
-    vertical-align: middle;
-  }
-
-  @media (max-width: 767px) {
-    .kpi-table td {
-      font-size: 14px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Shareholder Dialogue Card */
@@ -1693,6 +1827,7 @@
     min-width: 1000px;
     display: flex;
     flex-direction: column;
+    counter-reset: supply-item;
   }
 
   .supply-co2__row {
@@ -1731,10 +1866,42 @@
   .supply-co2__badge {
     width: 168px;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-content: center;
     color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .supply-co2__badge-list {
+    flex: 1;
+    min-width: 0;
+    list-style: none;
+    counter-reset: supply-item;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    li:not(:last-child) {
+      counter-increment: supply-item;
+      position: relative;
+      font-weight: 400;
+      border-bottom: 1px solid #d5d5d5;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      line-height: normal;
+    }
+  }
+
+  .supply-co2__badge-list li {
     font-size: 18px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
@@ -1755,7 +1922,6 @@
     flex: 1;
     min-width: 0;
     list-style: none;
-    counter-reset: supply-item;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -1898,6 +2064,11 @@
     gap: 16px;
     padding-inline: 40px;
   }
+  @media (max-width: 767px) {
+    .msg-card__body {
+      padding-inline: 0;
+    }
+  }
 
   .msg-card__body .hstyle2 {
     margin-bottom: 0;
@@ -1913,6 +2084,7 @@
 
   .msg-card__text p {
     margin: 0;
+    line-height: 1.8;
   }
 
   .msg-card__text p + p {
@@ -1922,6 +2094,12 @@
   .msg-card--reverse .msg-card__top {
     flex-direction: row-reverse;
     padding-left: 40px;
+  }
+  @media (max-width: 767px) {
+    .msg-card--reverse .msg-card__top {
+      flex-direction: column;
+      padding-left: 0px;
+    }
   }
 }
 
@@ -2036,17 +2214,49 @@
 
     .risk-opp__col {
       width: 100%;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .risk-opp__badge {
+      width: 100%;
+      height: auto;
+      padding: 10px 0px;
+      font-size: 20px;
     }
 
     .company-card {
-      margin-top: 60px;
-      padding: 24px 16px;
+      margin-top: 40px;
+      padding: 20px 16px;
       border-radius: 12px;
+      gap: 20px;
+    }
+
+    .company-card__heading {
+      align-items: center;
+      gap: 12px;
+    }
+
+    .company-card__heading::before {
+      width: 5px;
+      height: 28px;
+    }
+
+    .company-card__name {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .company-card__link-btn {
+      flex-shrink: 0;
+      font-size: 13px;
+      padding: 8px 12px 8px 16px;
+      gap: 10px;
     }
 
     .company-card__body {
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
     }
 
     .company-card__desc {
@@ -2058,6 +2268,18 @@
       border-top: 1px solid #ddd;
       padding-left: 0;
       padding-top: 16px;
+    }
+
+    .company-card__results {
+      padding: 16px;
+    }
+
+    .company-card__results-title {
+      font-size: 16px;
+    }
+
+    .company-card__result-name {
+      font-size: 14px;
     }
 
     .cg-table__list {
@@ -2143,6 +2365,11 @@
   background-clip: text;
 }
 
+@media (max-width: 767px) {
+  .topics-block__header-label span {
+    font-size: 20px;
+  }
+}
 .topics-block__header-accent {
   width: 44px;
   height: 44px;
@@ -3234,6 +3461,11 @@
    ============================== */
 @media (max-width: 767px) {
   /* graph-frame 内の画像を幅100%に */
+
+  .graph-frame .img {
+    width: 1000px;
+  }
+
   .graph-frame .img img {
     width: 100%;
     height: auto;
@@ -3448,7 +3680,6 @@
   }
 
   .tcfd-scenario-table__label {
-    width: 100%;
     border-radius: 4px 4px 0 0;
   }
 
@@ -3500,16 +3731,16 @@
    ============================== */
 @media (max-width: 767px) {
   .tm-section {
-    min-width: 0;
-    gap: 24px;
+    min-width: 0 !important;
+    gap: 25px;
   }
 
   .tm-top__text {
-    width: 100%;
+    width: 100% !important;
   }
 
   .tm-top__body {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .tm-top__diagram img,
@@ -3519,18 +3750,24 @@
     display: block;
   }
 
-  .kpi-table {
-    width: 100%;
-    table-layout: auto;
+  .kpi-table tbody {
+    display: block;
   }
 
-  .kpi-table__col {
-    width: auto;
+  .kpi-table tbody tr {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .kpi-table tbody tr:last-child {
+    margin-bottom: 0;
   }
 
   .kpi-table th,
   .kpi-table td {
-    font-size: 13px;
-    padding: 8px 6px;
+    display: block;
+    font-size: 14px;
+    grid-column: unset;
+    grid-row: unset;
   }
 }
