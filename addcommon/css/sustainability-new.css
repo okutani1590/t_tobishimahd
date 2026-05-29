@@ -15,6 +15,40 @@
   .pc-br {
     display: none !important;
   }
+
+  #inner.sustainability .main .wrap > .bg {
+    height: 380px !important;
+  }
+}
+
+/* 新規ページ背景 */
+
+.construction_business .bg {
+  background: url(/images/sustainability/construction_business/img_visual.webp) no-repeat center center / cover !important;
+}
+
+.growth_business .bg {
+  background: url(/images/sustainability/growth_business/img_visual.webp) no-repeat center center / cover !important;
+}
+
+.innovation_business .bg {
+  background: url(/images/sustainability/innovation_business/img_visual.webp) no-repeat center center / cover !important;
+}
+
+.financial_capital .bg {
+  background: url(/images/sustainability/financial_capital/img_visual.webp) no-repeat center center / cover !important;
+}
+
+.social_responsibility .bg {
+  background: url(/images/sustainability/social_responsibility/img_visual.webp) no-repeat center center / cover !important;
+}
+
+.materiality .bg {
+  background: url(/images/sustainability/materiality/img_visual.webp) no-repeat center center / cover !important;
+}
+.message .bg {
+  background: url(/images/sustainability/corporate_governance/img_visual.webp) no-repeat center center / cover !important;
+  height: 500px;
 }
 
 /* ==============================
@@ -543,6 +577,20 @@
       margin-right: 4px;
     }
   }
+
+  .c-note2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    text-indent: -2.2em;
+    padding-left: 1em;
+    margin-top: 10px;
+    &::before {
+      content: "(注)";
+      margin-right: 4px;
+    }
+  }
   /* Business Strategy Card */
   .bs-card {
     background: #d5e9f6;
@@ -759,6 +807,9 @@
   }
   .img-frame img {
     margin: 0 auto;
+  }
+  .img-frame .img--left img {
+    margin-left: 0;
   }
 
   .img-frame--flex {
@@ -1350,10 +1401,10 @@
   }
 
   &.growth_business .risk-opp__badge {
-    color: #43b681;
+    color: #0099d8;
   }
   &.innovation_business .risk-opp__badge {
-    color: #00c0f2;
+    color: #0099d8;
   }
 
   .risk-opp__items {
@@ -1377,6 +1428,11 @@
     line-height: 1;
   }
 
+  @media (max-width: 767px) {
+    .risk-opp__item-title {
+      font-size: 18px;
+    }
+  }
   .risk-opp__item-list {
     list-style: none;
     padding: 0;
@@ -1394,6 +1450,9 @@
     line-height: 1.5;
     color: #333;
   }
+  .risk-opp__item-list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   .risk-opp__item-list li::before {
     content: "";
@@ -1407,11 +1466,11 @@
   }
 
   &.growth_business .risk-opp__item-list li::before {
-    background: #43b681;
+    background: #0099d8;
   }
 
   &.innovation_business .risk-opp__item-list li::before {
-    background: #00c0f2;
+    background: #0099d8;
   }
 
   /* Portfolio diagram */
@@ -1833,7 +1892,7 @@
   .supply-co2__row {
     display: flex;
     align-items: stretch;
-    height: 112px;
+    min-height: 112px;
     gap: 4px;
   }
 
@@ -1940,6 +1999,15 @@
     color: #000;
     padding: 9px 20px 9px 40px;
     border-bottom: 1px solid #d5d5d5;
+  }
+
+  .supply-co2__row--s2 .supply-co2__badge-list li {
+    padding-block: 20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .supply-co2__row--s2 .supply-co2__list li {
+    padding-block: 20px;
   }
 
   .supply-co2__list li::before {
@@ -2539,6 +2607,163 @@
 }
 
 /* ==============================
+   Component: esg-table
+   ESGマテリアリティと選定理由テーブル
+   ============================== */
+
+.esg-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.esg-table {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 1000px;
+}
+
+.esg-table__header {
+  display: flex;
+  margin-left: auto;
+  width: 508px;
+}
+
+.esg-table__header-label {
+  flex: 1;
+  background: #e0e9f6;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+.esg-table__group {
+  display: flex;
+  gap: 5px;
+}
+
+.esg-table__letter {
+  width: 57px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.esg-table__letter--e {
+  background: #00b191;
+}
+
+.esg-table__letter--s {
+  background: #4a5eaa;
+}
+
+.esg-table__letter--g {
+  background: #005ec0;
+}
+
+.esg-table__subsections {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.esg-table__subsection {
+  display: flex;
+  gap: 5px;
+  align-items: stretch;
+}
+
+.esg-table__theme {
+  width: 114px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+.esg-table__theme p {
+  margin: 0;
+}
+
+.esg-table__rows {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.esg-table__row {
+  display: flex;
+  gap: 5px;
+  align-items: stretch;
+}
+
+.esg-table__items {
+  width: 246px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #ededed;
+}
+
+.esg-table__item {
+  width: 246px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+  min-height: 56px;
+}
+
+.esg-table__reason {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+}
+
+.esg-table__note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ==============================
    Component: materiality-process
    マテリアリティ特定プロセス ステップ図
    ============================== */
@@ -2725,7 +2950,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #3aad78 0%, #3aad78 calc(50% - 0.5px), rgba(255, 255, 255, 0.5) calc(50% - 0.5px), rgba(255, 255, 255, 0.5) calc(50% + 0.5px), #41c287 calc(50% + 0.5px), #41c287 100%);
+  background-repeat: no-repeat;
+  background: linear-gradient(to left bottom, #41c287 calc(50% - 1px), rgba(255, 255, 255, 0.5) calc(50% - 0.5px), rgba(255, 255, 255, 0.5) calc(50% + 0.5px), #3aad78 calc(50% + 1px));
 }
 
 .grp-table__corner-company {
@@ -2754,7 +2980,7 @@
   background: #41c287;
   vertical-align: middle;
   text-align: center;
-  padding: 8px 4px;
+  padding: 0;
 }
 
 .grp-table__company-name {
@@ -2768,6 +2994,13 @@
   line-height: 1.5;
   flex-wrap: wrap;
   text-decoration: none;
+  padding: 8px 4px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.grp-table__company-name span {
+  text-align: center;
 }
 
 .grp-table__company-name:hover {
@@ -2845,11 +3078,25 @@
   line-height: 1;
 }
 
+@media (max-width: 767px) {
+  .innov-topic__num {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+  }
+}
+
 .innov-topic__heading {
   font-size: 20px;
   font-weight: 700;
   color: #0c6ea3;
   line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .innov-topic__heading {
+    font-size: 16px;
+  }
 }
 
 .innov-topic__body {
@@ -2866,12 +3113,18 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 767px) {
+  .innov-topic__text {
+    font-size: 15px;
+  }
+}
 .innov-topic__img-card {
   background: #fff;
   border-radius: 16px;
   padding: 24px 26px 28px 10px;
   flex: 1;
   min-width: 0;
+  box-sizing: border-box;
 }
 
 .innov-topic__img-card img {
@@ -3050,7 +3303,7 @@
 
 .strat-block__body {
   display: flex;
-  gap: 40px;
+  gap: 35px;
   align-items: flex-start;
 }
 
@@ -3109,6 +3362,8 @@
 
   .strat-block__img-wrap {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: unset;
   }
 
   .strat-block__section-title {
@@ -3160,6 +3415,13 @@
   font-weight: 600;
 }
 
+@media (max-width: 767px) {
+  .materiality-detail__badge {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .materiality-detail__badge--1 {
   background: #00c0f2;
 }
@@ -3208,7 +3470,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #0099d8;
+  background: #005ec0;
   flex-shrink: 0;
   margin-top: 4px;
 }
@@ -3220,7 +3482,7 @@
 .materiality-detail__desc {
   flex: 1;
   min-width: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #333;
   margin: 0;
@@ -3529,7 +3791,8 @@
 
   .sustainability .supply-co2__badge {
     width: 100%;
-    height: 40px;
+    height: auto;
+    padding: 10px 0;
     font-size: 16px;
     border-radius: 0;
   }
@@ -3769,5 +4032,209 @@
     font-size: 14px;
     grid-column: unset;
     grid-row: unset;
+  }
+}
+
+/* ==============================
+   Component: kpi-mat-table
+   マテリアリティ・KPI テーブル
+   ============================== */
+.kpi-mat-table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  min-width: 1000px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.kpi-mat-table td {
+}
+
+.kpi-mat-table th,
+.kpi-mat-table td {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.kpi-mat-table thead th {
+  background: #e0e9f6;
+  font-weight: 600;
+}
+
+.kpi-mat-table__th-empty {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.kpi-mat-table td {
+  background: #fff;
+}
+
+.kpi-mat-table__letter {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px !important;
+  color: #fff !important;
+  line-height: 1.5;
+}
+
+.kpi-mat-table__letter--e {
+  background: #00b191 !important;
+}
+.kpi-mat-table__letter--s {
+  background: #4a5eaa !important;
+}
+.kpi-mat-table__letter--g {
+  background: #005ec0 !important;
+}
+
+.kpi-mat-table__theme {
+  font-weight: 700;
+}
+
+.kpi-mat-table__theme-name {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 10px;
+}
+@media (max-width: 767px) {
+  .kpi-mat-table__theme-name {
+    font-size: 11px;
+  }
+}
+
+.kpi-mat-table__sdg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.kpi-mat-table__sdg img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.kpi-mat-table__item {
+  font-weight: 600;
+}
+
+.kpi-mat-table__aim {
+  text-align: left !important;
+}
+
+.kpi-mat-table__reason {
+  text-align: left !important;
+}
+
+.kpi-mat-table__kpi {
+  text-align: left !important;
+  padding: 10px !important;
+}
+
+.kpi-mat-table__year,
+.kpi-mat-table__val {
+  white-space: nowrap;
+}
+
+/* ==============================
+   Component: materiality-process SP
+   マテリアリティ特定プロセス レスポンシブ
+   ============================== */
+@media (max-width: 767px) {
+  .materiality-process {
+    margin-top: 24px;
+  }
+
+  .materiality-process__box {
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .materiality-process__banner {
+    font-size: 13px;
+    padding: 6px 14px;
+    top: -13px;
+    white-space: normal;
+    width: calc(100% - 32px);
+    text-align: center;
+  }
+
+  .materiality-process__steps {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 14px;
+  }
+
+  .materiality-process__step {
+    padding: 14px 20px;
+    width: 90%;
+    height: 56px;
+    border-radius: 16px;
+    justify-content: flex-start;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  .materiality-process__text {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .materiality-process__text br {
+    display: none;
+  }
+
+  .materiality-process__arrow {
+    display: flex;
+    width: 100%;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .materiality-process__arrow svg {
+    display: none;
+  }
+
+  .materiality-process__arrow::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 11px solid #005ec0;
+  }
+
+  /* kpi-mat-table SP */
+  .kpi-mat-table__letter {
+    font-size: 28px !important;
+  }
+
+  .kpi-mat-table__sdg img {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* materiality matrix画像：スクリーン幅に合わせる */
+  .materiality .materiality-detail__right .graph-frame .img {
+    width: 100%;
+  }
+
+  .materiality .materiality-detail__right .graph-frame .img img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
